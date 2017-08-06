@@ -1,0 +1,43 @@
+// Buttons
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a.nav {
+	display: block;
+	text-align: center;
+	border-bottom: 0;
+	background: $mauve;
+	background: 
+		linear-gradient(
+			45deg,
+			$mauve 0%,
+			$cornflower 100%
+		);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	h2 {margin-bottom: 0;}
+
+	.layer {
+		padding: $space-m $space-s;
+		transition: background-color 1s ease;
+
+		&:hover,
+		&:active {background-color: $ocean;}
+	}
+}
+
+// Larger than tablet
+@media (#{$bp-larger-than-tablet}) {
+	a.nav {
+		small {display: none;}
+	}
+}
+
+// Larger than desktop
+@media (#{$bp-larger-than-desktop}) {
+	a.nav {
+		small {display: inline;}
+	}
+}

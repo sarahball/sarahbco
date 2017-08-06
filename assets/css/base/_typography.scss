@@ -1,0 +1,33 @@
+// Typography
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", serif; 
+}
+
+h1 { font-size: 2.5em; line-height: 1.2;  letter-spacing: -.05rem;   }
+h2 { font-size: 2em; line-height: 1.25; letter-spacing: -.05rem;     }
+h3 { font-size: 1.5em; line-height: 1.3;  letter-spacing: -.05rem;   }
+h4 { font-size: 1.25em; line-height: 1.35; letter-spacing: -.04rem; }
+h5 { font-size: 1em; line-height: 1.5;  letter-spacing: -.025rem;    }
+h6 { font-size: .75em; line-height: 1.6;  letter-spacing: 0;        }
+
+.heading h1 {margin: 0;}
+
+.heading--inline h1 {margin-bottom: $space-s;}
+
+p {
+  margin-top: 0;
+  line-height: 2;
+
+  &:last-child {margin-bottom: 0;}
+}
+
+small {
+	text-transform: uppercase;
+	font-size: .65em;
+	letter-spacing: 1px;
+	font-weight: 600;
+}

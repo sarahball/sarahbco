@@ -1,0 +1,12 @@
+// Sections
+
+#about-img {order: 2;}
+
+#about {order: 1;}
+
+// Larger than tablet
+@media (#{$bp-larger-than-tablet}) {
+  #about-img {order: 1;}
+
+  #about {order: 2;}
+}

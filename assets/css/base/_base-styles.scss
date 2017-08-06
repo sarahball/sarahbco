@@ -1,0 +1,108 @@
+// Base Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+html {
+	background-color: $ocean;
+	font-size: 16px;
+}
+
+:root {font-size: calc(.35vw + 14.6px);}
+
+@media (min-width: 96.429em) {
+	:root {font-size: 1.22rem;}
+}
+
+body {
+	min-height: 100vh;
+	background: 
+		linear-gradient(
+			45deg,
+			rgba($mauve, 0.25) 0%,
+			rgba($cornflower, 0.25) 100%),
+			url(../img/bg-mb.jpg) no-repeat top center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-size: 1em; // currently ems cause chrome bug misinterpreting rems on body element
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: $font-family;
+	color: $font-color;
+}
+
+.wrapper {
+	padding-top: $space-m;
+	padding-bottom: $space-m;
+}
+
+.container  {
+	background-color: $light-grey;
+	border-left: $space-xs solid $light-grey;
+	border-right: $space-xs solid $light-grey;
+	border-top: $space-m solid $light-grey;
+	border-bottom: $space-s solid $light-grey;
+}
+
+.inner {padding: $space-s;}
+
+.heading {padding: $space-l $space-s 0 $space-s;}
+
+
+// Links
+
+a {
+	color: $font-color;
+	text-decoration: none;
+	border-bottom: 1px solid $font-color;
+	transition: border-bottom-color 0.5s ease;
+
+	&:hover {
+		border-bottom: 1px solid $primary-color;
+	}
+}
+
+// Larger than tablet
+@media (#{$bp-larger-than-tablet}) {
+	body {
+		background: 
+			linear-gradient(
+				45deg,
+				rgba($mauve, 0.75) 0%,
+				rgba($cornflower, 0.55) 100%),
+				url(../img/bg-dsk.jpg) no-repeat bottom center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		font-weight: 300;
+	}
+}
+
+// Larger than desktop
+@media (#{$bp-larger-than-desktop}) {
+	body {
+		background: 
+			linear-gradient(
+				45deg,
+				rgba($mauve, 0.75) 0%,
+				rgba($cornflower, 0.55) 100%),
+				url(../img/bg-dsk-xl.jpg) no-repeat bottom center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	.wrapper {
+		padding-top: $space-xl;
+		padding-bottom: $space-xl;
+	}
+
+	.container {
+		border-left: $space solid $light-grey;
+		border-right: $space solid $light-grey;
+		border-top: $space-xl solid $light-grey;
+		border-bottom: $space-l solid $light-grey;
+	}
+}

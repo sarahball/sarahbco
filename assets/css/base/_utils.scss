@@ -1,0 +1,47 @@
+// Utilities
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.full {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.fit {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.right {float: right;}
+
+.left {float: left;}
+
+.fit {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.dsk {display: none;}
+
+.shadow {
+	-webkit-filter: drop-shadow(5px 5px 5px lighten($dark-grey, 30%));
+	filter: drop-shadow(5px 5px 5px lighten($dark-grey, 30%));
+}
+
+// Larger than phablet (also point when grid becomes active)
+@media (#{$bp-larger-than-tablet}) {
+	.flex {flex-direction: row;}
+
+	.mb {display: none;}
+
+	.dsk {display: block;}
+
+	.shadow {
+		-webkit-filter: drop-shadow(5px 5px 5px lighten($dark-grey, 50%));
+		filter: drop-shadow(5px 5px 5px lighten($dark-grey, 50%));
+	}
+}
