@@ -1,7 +1,7 @@
 // Buttons
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-a.nav {
+a.fancy {
 	display: block;
 	text-align: center;
 	border-bottom: 0;
@@ -16,11 +16,11 @@ a.nav {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	transition: background-color 1s ease;
 
-	h2 {margin-bottom: 0;}
+	@extend .shadow;
 
 	.layer {
-		padding: $space-m $space-s;
 		transition: background-color 1s ease;
 
 		&:hover,
@@ -28,10 +28,31 @@ a.nav {
 	}
 }
 
+a.nav {
+	h2 {margin-bottom: 0;}
+
+	.layer {
+		padding: $space-m $space-s;
+	}
+}
+
+a.social-icon {
+	margin-bottom: $space;
+	width: 100%;
+
+	svg {fill: currentColor;}
+
+	.layer {padding: $space-xs 0;}
+}
+
 // Larger than tablet
 @media (#{$bp-larger-than-tablet}) {
 	a.nav {
 		small {display: none;}
+	}
+
+	a.social-icon {
+		.layer {padding: $space-s 0;}
 	}
 }
 
