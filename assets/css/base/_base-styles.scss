@@ -38,16 +38,22 @@ body {
 
 .container  {
 	background-color: $light-grey;
-	border-left: $space-xs solid $light-grey;
-	border-right: $space-xs solid $light-grey;
-	border-top: $space-m solid $light-grey;
-	border-bottom: $space-s solid $light-grey;
+	border-left: $space solid transparent;
+	border-right: $space solid transparent;
+	border-top: $space-xl solid transparent;
+	border-bottom: $space-l solid transparent;
 }
 
 .inner {padding: $space-s;}
 
 .heading {padding: $space-l $space-s 0 $space-s;}
 
+figure {
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+}
 
 // Links
 
@@ -97,12 +103,5 @@ a {
 	.wrapper {
 		padding-top: $space-xl;
 		padding-bottom: $space-xl;
-	}
-
-	.container {
-		border-left: $space solid $light-grey;
-		border-right: $space solid $light-grey;
-		border-top: $space-xl solid $light-grey;
-		border-bottom: $space-l solid $light-grey;
 	}
 }

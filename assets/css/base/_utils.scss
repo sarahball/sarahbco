@@ -15,15 +15,31 @@
 
 .left {float: left;}
 
-.fit {
-	max-width: 100%;
-	box-sizing: border-box;
-}
+.center {margin: 0 auto;}
+
+/*.hero {
+	margin-bottom: calc(50% - 20px);
+
+	figure {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: -1;
+		margin: 0;
+	}
+
+	&+ .row {padding-top: $space-xs;}
+}*/
 
 .flex {
 	display: flex;
 	flex-direction: column;
 }
+
+.flex-a {order: 2;}
+
+.flex-b {order: 1;}
 
 .dsk {display: none;}
 
@@ -32,9 +48,28 @@
 	filter: drop-shadow(5px 5px 5px lighten($dark-grey, 30%));
 }
 
+a.img {border-bottom: none;}
+
 // Larger than phablet (also point when grid becomes active)
 @media (#{$bp-larger-than-tablet}) {
 	.flex {flex-direction: row;}
+
+	.flex-a {order: 1;}
+
+	.flex-b {order: 2;}
+
+	.giraffe {
+		position: relative;
+
+		figure {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
 
 	.mb {display: none;}
 
@@ -45,3 +80,12 @@
 		filter: drop-shadow(5px 5px 5px lighten($dark-grey, 50%));
 	}
 }
+
+// Larger than desktop
+/*@media (#{$bp-larger-than-desktop}) {
+	.hero {
+		&+ .row {
+		padding-top: $space-l;
+		}
+	}
+}*/

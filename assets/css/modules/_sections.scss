@@ -1,9 +1,5 @@
 // Sections
 
-#about-img {order: 2;}
-
-#about {order: 1;}
-
 #social {
 	text-align: center;
 	margin: 0 auto;
@@ -25,11 +21,4 @@
 			padding-right: 10px;
 		}
 	}
-}
-
-// Larger than tablet
-@media (#{$bp-larger-than-tablet}) {
-  #about-img {order: 1;}
-
-  #about {order: 2;}
 }

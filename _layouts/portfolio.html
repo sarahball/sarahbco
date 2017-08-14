@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  {% include head.html %}
+	  {% include portfolio-head.html %}
 	</head>
 	<body>
 		<div class="wrapper">
@@ -9,7 +9,7 @@
 		  	{{ content }}
 
 		  	<div class="twelve columns">
-		  		<div><a href="/"><h3>Home</h3></a></div>
+		  		<div><a href="{{ site.baseurl }}{% link index.html %}"><h3>Home</h3></a></div>
 		  	</div>
 		  </div>
 		</div>

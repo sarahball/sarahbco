@@ -1,9 +1,9 @@
 .container {
-	position: relative;
-	width: 100%;
+	position: static;
+	width: 90%;
 	max-width: $container-width;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -14,11 +14,10 @@
 	box-sizing: border-box;
 }
 
-// For devices larger than 400px
-@media (#{$bp-larger-than-mobile}) {
+// For devices larger than 550px
+@media (#{$bp-larger-than-phablet}) {
 	.container {
 		width: $container-width-larger-than-mobile;
-		padding: 0;
 	}
 }
 

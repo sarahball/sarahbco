@@ -1,0 +1,32 @@
+	<!-- Basic Page Needs -->
+
+	<meta charset="utf-8">
+	<title>
+	{% if page.title %}
+		{{ page.title | escape }} | {{ site.title | escape }}
+	{% endif %}
+	</title>
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+	<meta name="author" content="Sarah Ball">
+
+	<!-- Mobile Specific Metas -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FONT -->
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Playfair+Display:700' rel='stylesheet' type='text/css'>
+
+	<!-- CSS -->
+
+	<link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | absolute_url }}">
+
+	<!-- JS -->
+
+	<script src="//cdn.jsdelivr.net/blazy/1.8.2/blazy.min.js"></script>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | absolute_url }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | absolute_url }}">
+	<link rel="icon" type="image/png" href="{{ '/favicon.ico' | absolute_url }}" />

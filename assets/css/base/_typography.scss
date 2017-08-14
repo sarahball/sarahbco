@@ -2,9 +2,13 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin-top: $space-xs;
+  margin-bottom: $space-s;
   font-family: "Playfair Display", serif; 
+}
+
+h1 {
+  margin-top: $space;
 }
 
 h1 { font-size: 2.5em; line-height: 1.2;  letter-spacing: -.05rem;   }
@@ -14,15 +18,16 @@ h4 { font-size: 1.25em; line-height: 1.35; letter-spacing: -.04rem; }
 h5 { font-size: 1em; line-height: 1.5;  letter-spacing: -.025rem;    }
 h6 { font-size: .75em; line-height: 1.6;  letter-spacing: 0;        }
 
-.heading h1 {margin: 0;}
-
-.heading--inline h1 {margin-bottom: $space-s;}
+.heading-inline {margin-top: 0;}
 
 p {
-  margin-top: 0;
   line-height: 2;
+  margin-top: 0;
 
-  &:last-child {margin-bottom: 0;}
+  &.sidebar {
+    font-size: 0.8rem;
+    color: rgba($font-color, 0.65);
+  }
 }
 
 small {
@@ -30,4 +35,11 @@ small {
 	font-size: .65em;
 	letter-spacing: 1px;
 	font-weight: 600;
+}
+
+figcaption {
+  @extend small;
+  color: $medium-grey;
+  text-align: center;
+  margin-top: 0.5rem;
 }

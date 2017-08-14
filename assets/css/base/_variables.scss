@@ -9,12 +9,22 @@ $bp-larger-than-tablet    : "min-width: 750px" !default;
 $bp-larger-than-desktop   : "min-width: 1000px" !default;
 $bp-larger-than-desktophd : "min-width: 1200px" !default;
 
+// Spacing
+$space: 45px;
+$space-xl: calc(#{$space} + 35px);
+$space-l: calc(#{$space} + 20px);
+$space-m: $space;
+$space-s: calc(#{$space} - 20px);
+$space-xs: calc(#{$space} - 35px);
+
 // Colors
 $ocean: #26c6da !default;
 $mauve: #E0C3FC !default;
 $cornflower: #8EC5FC !default;
-$light-grey: #F2F2FA !default;
 $dark-grey: #222 !default;
+$medium-grey: rgba($dark-grey, 0.7) !default;
+$light-grey: #F2F2FA !default;
+$off-white: #FEFEFE !default;
 
 $primary-color: $ocean !default;
 $font-color: $dark-grey !default;
@@ -28,12 +38,4 @@ $container-width-larger-than-mobile: 85% !default;
 $container-width-larger-than-phablet: 80% !default;
 $total-columns: 12 !default;
 $column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
-$column-margin: 4% !default; // space between columns
-
-// Spacing
-$space: 45px;
-$space-xl: calc(#{$space} + 35px);
-$space-l: calc(#{$space} + 20px);
-$space-m: $space;
-$space-s: calc(#{$space} - 20px);
-$space-xs: calc(#{$space} - 35px);
+$column-margin: 6% !default; // space between columns

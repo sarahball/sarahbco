@@ -1,0 +1,14 @@
+@import "base/variables";
+
+html {background: $light-grey;}
+
+body {
+	background: transparent;
+}
+
+.container  {
+	background: transparent;
+	border-top: none;
+	border-bottom: none;
+	width: 100%;
+}

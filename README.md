@@ -28,6 +28,7 @@ You're welcome to inspect and duplicate any code you like from this site. Images
 #### Code
 - Jekyll
 - Skeleton
+- blazy.js
 
 #### Type
 - Google Fonts

@@ -2,4 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 config.codekit3
-index_old.md
+Gemfile.lock
+.DS_Store

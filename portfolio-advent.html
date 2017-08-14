@@ -1,0 +1,308 @@
+---
+layout: portfolio
+title: Portfolio – Advent Online Learning
+permalink: /portfolio/advent/
+---
+
+<!-- Portfolio - Advent Online Learning -->
+<div class="row">
+	<div class="eight columns">
+		<h1>Advent Online Learning</h1>
+		<p><em>The research and design process behind updating a look.</em></p>
+	</div>
+</div>
+<div class="row">
+	<div class="twelve columns">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-cover.png' | absolute_url }}" />
+		</figure>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<p>Advent Online Learning is an online course platform for people who committed minor crimes and infractions. It's targeted at first offenders to help them break the cycle of unlawful behavior.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<p>Advent was in the process of merging their course software together with one of their other tools – one that enabled judges and parole officers to assign the courses to offenders. They were also incorporating online payment and wanted the site to be mobile responsive for the first time. In a nutshell, my tasks were:</p>
+		<ul>
+			<li>to redesign both apps to appear as a single entity</li>
+			<li>to update the site flow to reflect these changes</li>
+			<li>without requiring any changes to be made to the back-end</li>
+		</ul>
+	</div>
+	<div class="four columns giraffe">
+		<p class="sidebar"><em><strong>Quick note!</strong> I wrote this case study to be more process-oriented, less about on showing off the final project. Images, figures, and some before + afters are used throughout to illustrate my process. They include captions to show how they tie in to the text. Shots of the final design are also interspersed, but without captions.</em></p>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<h1>The Spec</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<p>The client's goals were straightforward. They were working off an old, utilitarian design that had been built to release the content as quickly as possible, not with the users in mind. They wanted a cleaner, modern upgrade. Their only design requests were that we maintaing the existing brand colors and that we introduce full-width cover photos at the top of most pages. Beyond that, we were only constrained by the requirement to reskin the current site without restructuring the content.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="eight columns">
+		<h1>User Research</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<p>Advent serves rural counties in 16 states. I didn't have access to much user research from the client, so I looked up some basic stats on rural Americans. I chose to focus on ethnicity and smartphone usage. Ethnicity, because I wanted to reflect the communities being served in the stock photos I selected. Smartphone usage, because I knew that smartphone ownership correlated with more internet use, <sup><a href="http://www.pewglobal.org/2016/02/22/smartphone-ownership-and-internet-usage-continues-to-climb-in-emerging-economies/" target="_blank">1</a></sup> which would give me useful clues about the technological literacy of users. I was also making the site mobile responsive for the first time and I was interested in how widely that version would be used. Here's what I found:</p>
+		<ul>
+			<li>Rural and small town America is 77.8% white, 9.3% Hispanic, 8.2% African American, 1.9% Native American, and 1% Asian. <sup><a href="http://www.ruralhome.org/storage/research_notes/rrn-race-and-ethnicity-web.pdf" target="_blank">2</a></sup></li>
+			<li>According to the Pew Research Center, only 67% of rural Americans own a smartphone. This is among the lowest rates of smartphone ownership among any measured demographic. <sup><a href="http://www.pewinternet.org/fact-sheet/mobile/" target="_blank">3</a></sup></li>
+		</ul>
+	</div>
+	<div class="four columns  giraffe">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-registration-confirmation.png' | absolute_url }}" />
+		</figure>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<figure class="dsk">
+			<table class="u-full-width">
+			  <thead>
+			    <tr>
+			    	<th></th>
+			      <th>Any cellphone</th>
+			      <th>Smartphone</th>
+			      <th>Cellphone, but not smartphone</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th>Urban</th>
+			      <td>95%</td>
+			      <td>77%</td>
+			      <td>17%</td>
+			    </tr>
+			    <tr>
+			      <th>Suburban</th>
+			      <td>96%</td>
+			      <td>79%</td>
+			      <td>16%</td>
+			    </tr>
+			    <tr>
+			      <th>Rural</th>
+			      <td>94%</td>
+			      <td>67%</td>
+			      <td>27%</td>
+			    </tr>
+			    <tr>
+			    	<td colspan="4">
+			    	<figcaption>Cellular device ownership by population type. <sup><a href="http://www.pewinternet.org/fact-sheet/mobile/" target="_blank">3</a></sup></figcaption>
+			    	</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</figure>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<p>What I did know from Advent's user research was that visitors to the site were often confused and had trouble navigating. Considering the low smartphone ownership rates of rural areas, and the correlation between smartphone ownership and technological literacy, this was unsurprising. After collecting this data, I was certain that a simple, clear site flow was paramount to the usability of my redesign.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="eight columns">
+		<h1>Site Flow</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<p>To update the site flow, I began by focusing on user objectives. The site has two users: course students and course assignees. The assignees have it a bit easier, as all the have to do is log in to their account, and all their tools are in their account dashboard. (According to the client, there didn't need to be a user-facing registration for course assignees.)</p>
+		<p>For course students, the process was more involved. To complete the course, they had to register, take the course, and pay for the course. Payment could be made at any time and through three different payment methods (online, by mail, or by phone). The order of operations here was confusing to people, because normally you can't access materials until you pay for them, but that's not the case here. I chose to make the process imitate a standard payment gateway as much as possible, going from registration to payment to the course. But to allow students to get to the materials right away, I directed students straight to the course page after instructing them how to pay. This way the process is explained upfront, everyone gets immediate access to the materials, but the users don't have to hunt around the site to find the payment options. It's presented and explained immediately, and easily accessible from the account dashboard at any time.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="twelve columns">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-siteflow.jpg' | absolute_url }}" />
+			<figcaption>Site flow for student users</figcaption>
+		</figure>
+	</div>
+</div>
+
+<div class="row">
+	<div class="eight columns">
+		<h1>Atomic Design</h1>
+		<p>I follow atomic design principles in all my projects. I like to start out by mapping out all the building blocks that go in to a page (also known as "molecules" in the language of atomic design). For more complex projects, I start at a higher level and consider all the required page templates first. That wasn't necessary for this project as all the pages follow the same template.</p>
+		<p>After creating the site flow and generating a few ideas on how to better structure the content for usability, I came up with a complete list of building blocks.</p>
+	</div>
+</div>
+
+<div class="row">
+  <div class="four columns">
+    <ul>
+      <li>Menu bar</li>
+      <li>Dialogue
+      	<ul>
+      		<li>Log in</li>
+      		<li>Success/failure</li>
+      		<li>Help</li>
+      	</ul>
+      </li>
+      <li>Hero
+      	<ul>
+      		<li>Full screen w/content</li>
+      		<li>Image-only</li>
+      	</ul>
+      </li>
+    </ul>
+  </div>
+  <div class="four columns">
+    <ul>
+    	<li>Page title</li>
+    	<li>Form</li>
+    	<li>Menu</li>
+    	<li>Body content
+    		<ul>
+    			<li>Emphasized</li>
+    			<li>Normal</li>
+    			<li>De-emphasized</li>
+    		</ul>
+    	</li>
+    	<li>Dropdown
+    		<ul>
+    			<li>Multiple selector</li>
+    		</ul>
+    	</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+	<div class="eight columns">
+		<h1>Wireframing</h1>
+		<p>With a site flow and building blocks in place, the wireframing process becomes very intuitive. My priorities are ease of use for the user and displaying an appropriate hierarchy of information. With this in mind I mock up a mobile layout first, and then a desktop layout.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="four columns">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-wireframe-a.png' | absolute_url }}" />
+		</figure>
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-wireframe-e.png' | absolute_url }}" />
+		</figure>
+	</div>
+	<div class="four columns">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-wireframe-b.png' | absolute_url }}" />
+		</figure>
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-wireframe-d2.png' | absolute_url }}" />
+		</figure>
+	</div>
+	<div class="four columns">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-wireframe-c.png' | absolute_url }}" />
+		</figure>
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-wireframe-d1.png' | absolute_url }}" />
+		</figure>
+	</div>
+</div>
+
+<div class="row">
+	<div class="eight columns">
+		<h1>Design Decisions</h1>
+		<p>With the practical building blocks in place, my thought process shifts as I move further into the visual design phase. I keep these questions front-of-mind:</p>
+		<ul>
+			<li>What's the objective of this page or section, big picture-wise?</li>
+			<li>What are users looking for, and how are they using the page based on their different goals?</li>
+			<li>How does my visual design reflect their intentions and their needs?</li>
+		</ul>
+		<p>When I get lost in some nitpicky design detail or code snippet – happens to the best of us – these points bring me back to focus on the big picture. They also help a great deal when it comes time to share the design with the client. This way I can justify every design decision I've made with evidence, not merely because I think it looks good. Objective trumps subjective every time.</p>
+		<p>An example of this was my process for selecting the hero images. Sourcing photos was left up to me, so I used it as an opportunity to inject some warmth and humanity into what was otherwise a very minimal app.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="six columns">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-hero-before.jpg' | absolute_url }}" />
+			<figcaption>Before: the original images</figcaption>
+		</figure>
+	</div>
+	<div class="six columns">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-hero-after.png' | absolute_url }}" />
+			<figcaption>After: new cover photo style</figcaption>
+		</figure>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<p>The original images showed people engaged in the behavior the course was designed to change. For example, "Alcohol and Substance Abuse" portrayed a drunk woman collapsed on a table, and "Traffic Safety" showed a raging man behind the wheel. This struck me as a missed opportunity to convey a more uplifting message, one that tied in with the program's aims. I picked out a few stock portraits that stood out to me as more raw and honest than most. They give the impression the subject has been through hard times, but has come out strong on the other end. Course attendees are going through a challenging time in their lives. The new photos subtly make it a more positive experience to use the app.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="twelve columns">
+	<figure>
+		<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-registration.png' | absolute_url }}" />
+	</figure>
+</div>
+
+<div class="row">
+	<div class="eight columns">
+		<h1>Handoff</h1>
+		<p>I had some concerns about the upcoming design handoff – the developer wanted the designs in an unusual format and I was worried that some aspects would be lost when I couldn't deliver via Zeplin or a similar tool. In the end I sent the designs to the developer in the format he requested, along with a range of supplemental files. I included the following in the handoff:</p>
+		<ul>
+			<li>an annotated PDF with notes (normally I would use InVision or Redpen)</li>
+			<li>a graphic overlaying the design with the grid system I used with some comments on spacing and measurement</li>
+			<li>a cache of additional hero images for the client to use on pages they may create later</li>
+			<li>SVG versions of all the icons</li>
+			<li>interactions made in Principle for the menu, forms, and some other bits and pieces</li>
+			<li>a comprehensive style guide with both PDF and CSS versions, built in Zeplin</li>
+		</ul>
+	</div>
+</div>
+<figure>
+<div class="row">
+	<div class="six columns">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-interactions1.gif' | absolute_url }}" />
+		</figure>
+	</div>
+	<div class="six columns">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-interactions2.gif' | absolute_url }}" />
+		</figure>
+	</div>
+</div>
+<figcaption>Interaction examples for the handoff</figcaption>
+</figure>
+<div class="row">
+	<div class="eight columns">
+		<p>As a front-end developer myself, albeit one with a very different workflow, I sought to make the handoff as smooth as possible by including all the supplemental information I would hope to get in his position. It went beyond what the developer requested from the project manager, but it was important to me to include what was necessary to match the development to the design as close as possible. I included as much useful information as I could put together in the supplementary files, while ensuring that everything was in order and mostly self-explanatory in the file format he requested.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="eight columns">
+		<h1>Project Takeaways</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="eight columns">
+		<p><strong>Get totally clear on the spec and scope upfront.</strong> Early in my career, I was uncomfortable with asking more than a couple questions. I felt it made me look like I didn't know what I was doing. But after a couple projects under my belt, I realized the opposite is true! With experience, I learned to recognize where the questions and confusion most often come up. Being a good designer doesn't mean arriving with all the answers, but being able to see where the holes are and ask the right questions to fill in the picture. This applies for every step of the design process, by the way, but is especially true in the early stages of any project.</p>
+		<p><strong>Just because a client isn't especially research-oriented, doesn't mean a designer can't be.</strong> When I didn't have much to go on, I went out of my way to get some data I knew would help me better understand the users and their needs.</p>
+		<p><strong>Lay the ground work for a great design.</strong> Visual design is the most fun part for me, and it's easy to get ahead of myself when it's almost time to start making things pretty. But an aesthetic site is worthless if it doesn't suit the client's objectives or make sense to the users. Nowadays I feel uncomfortable designing when I don't have the research and content to back it up.</p>
+		<p><strong>Go the extra mile to get the best results.</strong> There are points throughout the project where I could've done no more than what was asked of me, but I wouldn't have been happy with the result. This is especially true on projects like this where there's no opportunity to iterate after launch. It's worth it to channel my  perfectionist and push through that last 5% to make things as perfect as possible for presentations and handoff.</p>
+	</div>
+	<div class="four columns giraffe">
+		<figure>
+			<img class="fit shadow b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/portfolio-advent-home-tablet.png' | absolute_url }}" />
+		</figure>
+	</div>
+</div>

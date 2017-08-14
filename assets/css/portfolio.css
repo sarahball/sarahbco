@@ -1,0 +1,11 @@
+html {
+  background: #F2F2FA; }
+
+body {
+  background: transparent; }
+
+.container {
+  background: transparent;
+  border-top: none;
+  border-bottom: none;
+  width: 100%; }
