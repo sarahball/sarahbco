@@ -2,23 +2,20 @@
 <html lang="en">
 	<head>
 	  {% include portfolio-head.html %}
+	  {% if site.google_analytics and jekyll.environment == 'production' %}
+	  {% include analytics.html %}
+	  {% endif %}
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="container">
 		  	{{ content }}
-
 		  	<div class="twelve columns">
 		  		<div><a href="{{ site.baseurl }}{% link index.html %}"><h3>Home</h3></a></div>
 		  	</div>
 		  </div>
 		</div>
 
-		<script>
-			;(function() {
-				// Initialize
-				var bLazy = new Blazy();
-			})();
-		</script>
+		{% include scripts.html %}
 	</body>
 </html>
