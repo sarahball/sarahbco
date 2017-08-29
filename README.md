@@ -29,6 +29,8 @@ You're welcome to inspect and duplicate any code you like from this site. Images
 - Jekyll
 - Skeleton
 - blazy.js
+- salvattore.js
+- zoom.js
 
 #### Type
 - Google Fonts

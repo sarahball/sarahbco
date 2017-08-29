@@ -17,21 +17,6 @@
 
 .center {margin: 0 auto;}
 
-/*.hero {
-	margin-bottom: calc(50% - 20px);
-
-	figure {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: -1;
-		margin: 0;
-	}
-
-	&+ .row {padding-top: $space-xs;}
-}*/
-
 .flex {
 	display: flex;
 	flex-direction: column;
@@ -49,6 +34,11 @@
 }
 
 a.img {border-bottom: none;}
+
+// Salvattore
+#grid[data-columns]::before {
+	content: '3 .columns.four';
+}
 
 // Larger than phablet (also point when grid becomes active)
 @media (#{$bp-larger-than-tablet}) {
@@ -80,12 +70,3 @@ a.img {border-bottom: none;}
 		filter: drop-shadow(5px 5px 5px lighten($dark-grey, 50%));
 	}
 }
-
-// Larger than desktop
-/*@media (#{$bp-larger-than-desktop}) {
-	.hero {
-		&+ .row {
-		padding-top: $space-l;
-		}
-	}
-}*/
