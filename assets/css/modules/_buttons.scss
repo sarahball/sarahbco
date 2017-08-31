@@ -22,6 +22,9 @@ a.fancy {
 
 	.layer {
 		transition: background-color 1s ease;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 
 		&:hover,
 		&:active {background-color: $ocean;}
@@ -29,7 +32,7 @@ a.fancy {
 }
 
 a.nav {
-	h2 {margin-bottom: 0;}
+	//h2 {margin-bottom: 0;}
 
 	.layer {
 		padding: $space-m $space-s;
