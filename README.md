@@ -29,8 +29,9 @@ You're welcome to inspect and duplicate any code you like from this site. Images
 - Jekyll
 - Skeleton
 - blazy.js
-- salvattore.js
+- Salvattore
 - zoom.js
+- Right Height
 
 #### Type
 - Google Fonts
