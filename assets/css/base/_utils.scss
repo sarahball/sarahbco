@@ -28,10 +28,10 @@
 
 .dsk {display: none;}
 
-.shadow {
+/*.shadow {
 	-webkit-filter: drop-shadow(5px 5px 5px lighten($dark-grey, 30%));
 	filter: drop-shadow(5px 5px 5px lighten($dark-grey, 30%));
-}
+}*/
 
 a.img {border-bottom: none;}
 
@@ -65,8 +65,8 @@ a.img {border-bottom: none;}
 
 	.dsk {display: block;}
 
-	.shadow {
+	/*.shadow {
 		-webkit-filter: drop-shadow(5px 5px 5px lighten($dark-grey, 50%));
 		filter: drop-shadow(5px 5px 5px lighten($dark-grey, 50%));
-	}
+	}*/
 }

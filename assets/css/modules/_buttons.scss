@@ -18,8 +18,6 @@ a.fancy {
 	background-size: cover;
 	transition: background-color 1s ease;
 
-	@extend .shadow;
-
 	.layer {
 		transition: background-color 1s ease;
 		display: flex;
@@ -32,8 +30,6 @@ a.fancy {
 }
 
 a.nav {
-	//h2 {margin-bottom: 0;}
-
 	.layer {
 		padding: $space-m $space-s;
 	}
