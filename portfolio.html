@@ -4,48 +4,62 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-<div class="row" data-right-height>
-	<div class="five columns">
-		<h1>Case Studies</h1>
-		<a href="{{ site.baseurl }}{% link portfolio-advent.html %}" class="nav fancy">
-			<div class="layer" data-right-height-content>
-				<h2>Advent Online Learning</h2>
-				<small>Web app design refresh</small>
-			</div>
-		</a>
-	</div>
-	<div class="five columns">
-		<h1>Portfolio</h1>
-		<a href="{{ site.baseurl }}{% link portfolio-shots.html %}" class="nav fancy">
-			<div class="layer" data-right-height-content>
-				<h2>Project Shots</h2>
-				<small>Design + dev work</small>
-			</div>
-		</a>
-	</div>
-</div>
 <div class="row">
-	<div class="eleven columns">
-		<h1>Coming Soon</h1>
+	<h1>Portfolio</h1>
+</div>
+
+<div class="row portfolio-section">
+	<div class="five columns">
+		<figure>
+			<a class="img" href="{{ site.baseurl }}{% link portfolio-advent.html %}">
+				<img class="fit dsk" src="{{ '/assets/img/portfolio-advent-home-tablet.png' | absolute_url }}" />
+				<img class="fit mb" src="{{ '/assets/img/portfolio-advent-cover.png' | absolute_url }}" />
+			</a>
+		</figure>
+	</div>
+	<div class="six columns">
+		<div class="portfolio-description">
+			<h3 class="heading-inline">Product Design ・ Case Study</h3>
+			<h2><a href="{{ site.baseurl }}{% link portfolio-advent.html %}">Advent Online Learning</a></h2>
+			<p>I was tasked with giving this app a design refresh. This case study takes a look at my process for restructuring the screens to improve usability and how I gave it a more modern look.
+			</p>
+			<a class="btn" href="{{ site.baseurl }}{% link portfolio-advent.html %}">See More ➞</a>
+		</div>
 	</div>
 </div>
-<div class="row" data-right-height>
+
+<div class="row portfolio-section">
 	<div class="five columns">
-		<a href="#" class="nav fancy">
-			<div class="layer" data-right-height-content>
-				<small>Case Study</small>
-				<h2>Riskopy</h2>
-				<small>Founding a startup</small>
-			</div>
-		</a>
+		<figure>
+			<a class="img" href="{{ site.baseurl }}{% link portfolio-shots.html %}">
+				<img class="fit dsk" src="{{ '/assets/img/uponarrival-mb.jpg' | absolute_url }}" />
+				<img class="fit mb" src="{{ '/assets/img/uponarrival-dsk.jpg' | absolute_url }}" />
+			</a>
+		</figure>
 	</div>
+	<div class="six columns">
+		<div class="portfolio-description">
+			<h3 class="heading-inline">UI Design ・ Product Design</h3>
+			<h2><a href="{{ site.baseurl }}{% link portfolio-shots.html %}">Personal Projects</a></h2>
+			<p>Things made for fun, including the app I'm building, Upon Arrival.</p>
+			<a class="btn" href="{{ site.baseurl }}{% link portfolio-shots.html %}">See More ➞</a>
+		</div>
+	</div>
+</div>
+
+<div class="row portfolio-section">
 	<div class="five columns">
-		<a href="#" class="nav fancy">
-			<div class="layer" data-right-height-content>
-				<small>Case Study</small>
-				<h2>Upon Arrival</h2>
-				<small>Web app product design</small>
-			</div>
-		</a>
+		<figure>
+			<img class="fit dsk" src="{{ '/assets/img/riskopy-mb.jpg' | absolute_url }}" />
+			<img class="fit mb" src="{{ '/assets/img/riskopy-dsk.jpg' | absolute_url }}" />
+		</figure>
+	</div>
+	<div class="six columns">
+		<div class="portfolio-description">
+			<h3 class="heading-inline">Product Design</h3>
+			<h2>Riskopy</h2>
+			<p>I was directly responsible for all things product at a scrappy fintech startup. We built a tool for finance providers that aggregated and contextualized data on 100 million businesses.</p>
+			<a class="btn disabled" href="#">Coming Soon</a>
+		</div>
 	</div>
 </div>

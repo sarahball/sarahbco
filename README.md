@@ -27,11 +27,10 @@ You're welcome to inspect and duplicate any code you like from this site. Images
 
 #### Code
 - Jekyll
-- Skeleton
+- Skeleton-Sass
 - blazy.js
 - Salvattore
 - zoom.js
-- Right Height
 
 #### Type
 - Google Fonts

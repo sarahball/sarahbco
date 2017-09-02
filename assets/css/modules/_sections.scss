@@ -11,6 +11,13 @@
 	}
 }
 
+.portfolio-section {margin-bottom: $space-xl;}
+
+.portfolio-description {
+	p {margin-bottom: $space-s;}
+	//margin-bottom: $space-l;
+}
+
 // Mobile-only
 @media (#{$bp-mobile-only}) {
 	#social {
@@ -20,5 +27,11 @@
 			padding-left: 10px;
 			padding-right: 10px;
 		}
+	}
+}
+
+@media (#{$bp-larger-than-tablet}) {
+	.portfolio-section {
+		figure {margin-bottom: 0;}
 	}
 }
