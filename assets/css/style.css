@@ -450,9 +450,9 @@ h2 {
 }
 
 h3 {
-  font-size: 0.85em;
+  font-size: 0.8em;
   line-height: 1;
-  letter-spacing: .05rem;
+  letter-spacing: .02rem;
 }
 
 h1 {
@@ -460,9 +460,10 @@ h1 {
 }
 
 h3 {
-  font-family: SF Compact Text, "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 p {
@@ -480,7 +481,7 @@ button {
   text-transform: uppercase;
   font-size: .65em;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 figcaption {
