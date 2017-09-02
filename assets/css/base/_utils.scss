@@ -61,9 +61,9 @@ a.img {border-bottom: none;}
 figure.space {margin-bottom: $space-xl;}
 
 // Salvattore
-#grid[data-columns]::before {
+/*#grid[data-columns]::before {
 	content: '3 .columns.four';
-}
+}*/
 
 // Larger than phablet (also point when grid becomes active)
 @media (#{$bp-larger-than-tablet}) {
