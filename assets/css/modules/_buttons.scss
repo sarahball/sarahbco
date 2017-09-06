@@ -37,7 +37,13 @@ a.fancy {
 	text-align: center;
 	border-bottom: 0;
 	background: $secondary-color;
-	background: $gradient-angle;
+	background: -moz-linear-gradient(19deg, $secondary-color 0%, $primary-color 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, $secondary-color), color-stop(100%, $primary-color));
+	background: -webkit-linear-gradient(19deg, $secondary-color 0%, $primary-color 100%);
+	background: -o-linear-gradient(19deg, $secondary-color 0%, $primary-color 100%);
+	background: -ms-linear-gradient(19deg, $secondary-color 0%, $primary-color 100%);
+	background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$secondary-color', endColorstr='$primary-color', GradientType=1 );
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

@@ -14,7 +14,14 @@ html {
 
 body {
 	min-height: 100vh;
-	background: $gradient;
+	background: $primary-color;
+	background: -moz-linear-gradient(top, $secondary-color 0%, $primary-color 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, $secondary-color), color-stop(100%, $primary-color));
+	background: -webkit-linear-gradient(top, $secondary-color 0%, $primary-color 100%);
+	background: -o-linear-gradient(top, $secondary-color 0%, $primary-color 100%);
+	background: -ms-linear-gradient(top, $secondary-color 0%, $primary-color 100%);
+	background: linear-gradient(to bottom, $secondary-color 0%, $primary-color 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$secondary-color', endColorstr='$primary-color', GradientType=0 );
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -71,12 +78,6 @@ a {
 
 // Larger than desktop
 @media (#{$bp-larger-than-desktop}) {
-	body {
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
 
 	.wrapper {
 		padding-top: $space-xl;

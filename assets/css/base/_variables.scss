@@ -24,12 +24,7 @@ $light-grey  : #FEFEFE !default;
 
 $primary-color    : #C3F2E4 !default;
 $secondary-color  : #D2F1D9 !default;
-$accent-color     : #FFD1FF !default;
-
-$gradient-color-a : $primary-color !default;
-$gradient-color-b : $secondary-color !default;
-$gradient: linear-gradient(to top, $gradient-color-a 0%, $gradient-color-b 100%) !default;
-$gradient-angle: linear-gradient(19deg, $gradient-color-a 0%, $gradient-color-b 100%) !default;
+$accent-color     : #EEDCFF !default;
 
 // Typography
 $font-color: $dark-grey !default;
