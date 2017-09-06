@@ -10,27 +10,28 @@ $bp-larger-than-desktop   : "min-width: 1000px" !default;
 $bp-larger-than-desktophd : "min-width: 1200px" !default;
 
 // Spacing
-$space: 45px;
-$space-xl: calc(#{$space} + 35px);
-$space-l: calc(#{$space} + 20px);
-$space-m: $space;
-$space-s: calc(#{$space} - 20px);
-$space-xs: calc(#{$space} - 35px);
+$space    : 45px;
+$space-xl : calc(#{$space} + 35px);
+$space-l  : calc(#{$space} + 20px);
+$space-m  : $space;
+$space-s  : calc(#{$space} - 20px);
+$space-xs : calc(#{$space} - 35px);
 
 // Colors
-$ocean: #26c6da !default;
-$mauve: #E0C3FC !default;
-$cornflower: #8EC5FC !default;
-$dark-grey: #222 !default;
-$medium-grey: rgba($dark-grey, 0.7) !default;
-$light-grey: #F2F2FA !default;
-$off-white: #FEFEFE !default;
+$dark-grey   : #353230 !default;
+$medium-grey : lighten($dark-grey, 45%) !default;
+$light-grey  : #FEFEFE !default;
 
-$primary-color: $ocean !default;
-$secondary-color: $mauve !default;
-$font-color: $dark-grey !default;
+$primary-color    : #ffd1ff !default;
+$secondary-color  : #fad0c4 !default;
+
+$gradient-color-a : $secondary-color !default;
+$gradient-color-b : $primary-color !default;
+$gradient: linear-gradient(to top, $gradient-color-a 0%, $gradient-color-b 100%) !default;
+$gradient-angle: linear-gradient(19deg, $gradient-color-a 0%, $gradient-color-b 100%) !default;
 
 // Typography
+$font-color: $dark-grey !default;
 $font-family: SF Compact Text, "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 //Grid Variables

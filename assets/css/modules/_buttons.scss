@@ -14,9 +14,8 @@ button {
   line-height: 42px;
   text-decoration: none;
   white-space: nowrap;
-  background-color: $cornflower;
+  background-color: $primary-color;
   border: none;
-  //border: 1px solid darken($cornflower, 20%);
   cursor: pointer;
   box-sizing: border-box;
   -webkit-transition: background-color 0.75s ease, border 0.75s ease;
@@ -24,9 +23,8 @@ button {
 
 .btn:hover,
 button:hover {
-	background-color: $mauve;
+	background-color: $secondary-color;
 	border: none;
-	//border: 1px solid darken($mauve, 20%);
 }
 
 .btn.disabled,
@@ -38,13 +36,8 @@ a.fancy {
 	display: block;
 	text-align: center;
 	border-bottom: 0;
-	background: $mauve;
-	background: 
-		linear-gradient(
-			45deg,
-			$mauve 0%,
-			$cornflower 100%
-		);
+	background: $secondary-color;
+	background: $gradient-angle;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -58,7 +51,7 @@ a.fancy {
 		flex-direction: column;
 
 		&:hover,
-		&:active {background-color: $ocean;}
+		&:active {background-color: $primary-color;}
 	}
 }
 
@@ -78,7 +71,10 @@ a.social-icon {
 
 	svg {fill: currentColor;}
 
-	.layer {padding: $space-xs 0;}
+	.layer {
+		padding: $space-xs 0;
+		align-items: center;
+	}
 }
 
 // Larger than tablet
