@@ -34,11 +34,7 @@ You're welcome to inspect and duplicate any code you like from this site. Images
 #### Type
 - Google Fonts
 
-#### Color
-- Grabient
-
 #### Photography
-- Charlie Harutaka (Unsplash)
 - Ben Firshman
 
 Designed, developed, and deployed by Sarah Ball

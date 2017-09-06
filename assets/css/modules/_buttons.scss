@@ -14,7 +14,7 @@ button {
   line-height: 42px;
   text-decoration: none;
   white-space: nowrap;
-  background-color: $primary-color;
+  background-color: $accent-color;
   border: none;
   cursor: pointer;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ button {
 
 .btn:hover,
 button:hover {
-	background-color: $secondary-color;
+	background-color: $primary-color;
 	border: none;
 }
 
@@ -42,16 +42,16 @@ a.fancy {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-webkit-transition: background-color 1s ease;
+	transition: background-color 1s ease;
 
 	.layer {
-		-webkit-transition: background-color 1s ease;
+		transition: background-color 1s ease;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 
 		&:hover,
-		&:active {background-color: $primary-color;}
+		&:active {background-color: $accent-color;}
 	}
 }
 
@@ -66,14 +66,17 @@ a.nav {
 // Social
 
 a.social-icon {
-	margin-bottom: $space;
-	width: 100%;
+	margin-bottom: $space-s;
+	border-bottom: none;
+	transition: background-color 0.75s ease;
 
 	svg {fill: currentColor;}
 
 	.layer {
-		padding: $space-xs 0;
+		padding: $space-xs;
 		align-items: center;
+		width: 50px;
+		height: 50px;
 	}
 }
 
@@ -84,7 +87,11 @@ a.social-icon {
 	}
 
 	a.social-icon {
-		.layer {padding: $space-s 0;}
+		.layer {
+			padding: $space-s;
+			width: auto;
+			height: auto;
+		}
 	}
 }
 
