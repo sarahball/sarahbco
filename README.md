@@ -4,7 +4,7 @@
 
 This is the repository for [sarahb.co](https://sarahb.co). It's my landing page, portfolio, and all-around homebase on the internet.
 
-I'm Sarah Ball, a UI designer and developer (front-end and Wordpress). You can reach me by [email](mailto:hi@sarahb.co) or [@_satelliteeyes](http://www.twitter.com/_satelliteeyes).
+I'm Sarah Ball, a product designer. You can reach me by [email](mailto:hi@sarahb.co) or [@_satelliteeyes](http://www.twitter.com/_satelliteeyes).
 
 ### Contributing
 
