@@ -18,7 +18,7 @@ button {
   border: none;
   cursor: pointer;
   box-sizing: border-box;
-  -webkit-transition: background-color 0.75s ease, border 0.75s ease;
+  -webkit-transition: background-color 0.5s ease, border 0.5s ease;
 }
 
 .btn:hover,
@@ -48,10 +48,10 @@ a.fancy {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	transition: background-color 1s ease;
+	transition: background-color .5s ease;
 
 	.layer {
-		transition: background-color 1s ease;
+		transition: background-color .5s ease;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -74,7 +74,7 @@ a.nav {
 a.social-icon {
 	margin-bottom: $space-s;
 	border-bottom: none;
-	transition: background-color 0.75s ease;
+	transition: background-color 0.5s ease;
 
 	svg {fill: currentColor;}
 

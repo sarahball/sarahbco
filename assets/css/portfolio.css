@@ -4,6 +4,9 @@ html {
 body {
   background: transparent; }
 
+.wrapper {
+  padding-top: 0; }
+
 .container {
   background: transparent;
   border-top: none;

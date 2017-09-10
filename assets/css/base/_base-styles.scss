@@ -40,10 +40,6 @@ body {
 
 .container  {
 	background-color: $light-grey;
-	border-left: $space solid transparent;
-	border-right: $space solid transparent;
-	border-top: $space-xl solid transparent;
-	border-bottom: $space-l solid transparent;
 }
 
 .inner {padding: $space-s;}

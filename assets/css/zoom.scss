@@ -1,5 +1,5 @@
 img[data-action="zoom"] {
-  cursor: pointer;
+  cursor: zoom-in;
 }
 .zoom-img,
 .zoom-img-wrap {
@@ -16,7 +16,7 @@ img[data-action="zoom"] {
   }
 }
 img.zoom-img {
-  cursor: pointer;
+  cursor: zoom-out;
 }
 .zoom-overlay {
   z-index: 420;
