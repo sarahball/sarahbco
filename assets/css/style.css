@@ -100,7 +100,7 @@ body { min-height: 100vh; background: #C3F2E4; background: -moz-linear-gradient(
 
 figure { margin-top: 0; margin-left: 0; margin-right: 0; text-align: center; }
 
-img[src$=".gif"], img[src$=".png"] { image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: -webkit-optimize-contrast; -ms-interpolation-mode: nearest-neighbor; }
+img[src$=".gif"], img[src$=".png"], img[src$=".jpg"] { image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: -webkit-optimize-contrast; -ms-interpolation-mode: nearest-neighbor; }
 
 a { color: #353230; text-decoration: none; border-bottom: 1px solid #353230; transition: border-bottom-color 0.25s ease, background-color 0.5s ease; }
 
