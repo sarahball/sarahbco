@@ -35,7 +35,7 @@ You're welcome to inspect and duplicate any code you like from this site. Images
 - Google Fonts
 
 #### Photography
-- Ben Firshman
+- Jeff Wang
 
 Designed, developed, and deployed by Sarah Ball
 
