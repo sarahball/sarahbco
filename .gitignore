@@ -4,16 +4,36 @@ _site
 config.codekit3
 Gemfile.lock
 .DS_Store
+/_includes/work.html
 /assets/img/bg-dsk-xl.jpg
 /assets/img/bg-dsk.jpg
 /assets/img/bg-mb.jpg
+/assets/img/clients-1.png
 /assets/img/clients-2.png
 /assets/img/clients-3.png
+/assets/img/clients-4.png
+/assets/img/clients-5.png
 /assets/img/riskopy-dsk.png
 /assets/img/riskopy-mb.png
 /assets/img/uponarrival-dsk.png
 /assets/img/uponarrival-mb.png
 /assets/img/portfolio-more-riskopy-*
 /assets/img/portfolio-more-yr.png
+/assets/img/portfolio-more-agi*
+/assets/img/portfolio-more-joma*
+/assets/img/portfolio-more-misc*
+/assets/img/portfolio-more-ses*
+/assets/img/portfolio-more-ua-1.jpg
+/assets/img/portfolio-more-ua-2.jpg
+/assets/img/portfolio-more-ua-3.jpg
+/assets/img/portfolio-more-ua-4.jpg
+/assets/img/portfolio-more-ua-5.jpg
+/assets/img/portfolio-more-ua-8.jpg
+/assets/img/portfolio-more-ui-3.jpg
+/assets/img/portfolio-more-ui-4.jpg
+/assets/img/portfolio-more-ui-3.jpg
+/assets/img/portfolio-more-ui-5.jpg
+/assets/img/sarah copy.jpg
+/assets/img/more-yr.png
 portfolio-riskopy copy.html
 README.html

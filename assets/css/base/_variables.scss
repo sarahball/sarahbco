@@ -22,9 +22,9 @@ $dark-grey   : #353230 !default;
 $medium-grey : lighten($dark-grey, 45%) !default;
 $light-grey  : #FEFEFE !default;
 
-$primary-color    : #C3F2E4 !default;
-$secondary-color  : #D2F1D9 !default;
-$accent-color     : #EEDCFF !default;
+$primary-color    : rgba(#C3F2E4, 0.5) !default;
+$secondary-color  : rgba(#dfffe6, 0.5) !default;
+$accent-color     : rgba(#EEDCFF, 0.75) !default;
 
 // Typography
 $font-color: $dark-grey !default;

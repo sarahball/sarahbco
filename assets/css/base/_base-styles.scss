@@ -2,7 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 html {
-	background-color: $accent-color;
+	background-color: $light-grey;
 	font-size: 16px;
 }
 
@@ -68,7 +68,7 @@ a {
 	color: $font-color;
 	text-decoration: none;
 	border-bottom: 1px solid $font-color;
-	transition: border-bottom-color 0.25s ease, background-color 0.5s ease;
+	transition: border-bottom-color 0.25s ease, background-color 0.35s ease;
 
 	&:hover {
 		border-bottom: 1px solid transparent;
