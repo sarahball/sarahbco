@@ -18,8 +18,21 @@
 .center {margin: 0 auto;}
 
 .flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
+}
+
+.flex-row {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
 }
 
 .flex-a {order: 2;}
@@ -33,7 +46,7 @@ a.img {
 	&:hover {background: none;}
 }
 
-figure.space {margin-bottom: $space-xl;}
+// figure.space {margin-bottom: $space-xl;} // temp
 
 // Larger than phablet
 @media (#{$bp-larger-than-tablet}) {

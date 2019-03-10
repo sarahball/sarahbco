@@ -5,26 +5,23 @@
 
 .btn,
 button {
-	@extend small;
   display: inline-block;
   height: 42px;
   padding: 0 30px;
-  color: $font-color;
-  text-align: center;
   line-height: 42px;
   text-decoration: none;
   white-space: nowrap;
-  background-color: $accent-color;
+  background-color: $pop;
   border: none;
   cursor: pointer;
   box-sizing: border-box;
-  -webkit-transition: background-color 0.5s ease, border 0.5s ease;
+  -webkit-transition: background-color 0.1s ease;
 }
 
 .btn:hover,
 button:hover {
-	background-color: $primary-color;
-	border: none;
+	background-color: lighten($pop, 15%);
+	-webkit-transition: background-color 0.1s ease;
 }
 
 .btn.disabled,

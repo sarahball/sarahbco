@@ -4,24 +4,19 @@
 html {
 	background-color: $light-grey;
 	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-:root {font-size: calc(.35vw + 14.6px);}
+//:root {font-size: calc(.35vw + 14.6px);}
 
 @media (min-width: 96.429em) {
-	:root {font-size: 1.22rem;}
+	//:root {font-size: 1.22rem;}
 }
 
 body {
 	min-height: 100vh;
-	background: $primary-color;
-	background: -moz-linear-gradient(top, $secondary-color 0%, $primary-color 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, $secondary-color), color-stop(100%, $primary-color));
-	background: -webkit-linear-gradient(top, $secondary-color 0%, $primary-color 100%);
-	background: -o-linear-gradient(top, $secondary-color 0%, $primary-color 100%);
-	background: -ms-linear-gradient(top, $secondary-color 0%, $primary-color 100%);
-	background: linear-gradient(to bottom, $secondary-color 0%, $primary-color 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$secondary-color', endColorstr='$primary-color', GradientType=0 );
+	@include backgroundGradient;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -33,13 +28,12 @@ body {
 	color: $font-color;
 }
 
-.wrapper {
+.container {
+	margin: 0 auto;
 	padding-top: $space-m;
 	padding-bottom: $space-m;
-}
-
-.container  {
-	background-color: $light-grey;
+	width: 90%;
+	max-width: $container-width;
 }
 
 .inner {padding: $space-s;}
@@ -47,9 +41,7 @@ body {
 .heading {padding: $space-l $space-s 0 $space-s;}
 
 figure {
-	margin-top: 0;
-	margin-left: 0;
-	margin-right: 0;
+	margin: 0;
 	text-align: center;
 }
 
@@ -62,29 +54,47 @@ img[src$=".gif"], img[src$=".png"], img[src$=".jpg"] {
 	-ms-interpolation-mode: nearest-neighbor;
 }
 
-// Links
+img {
+	@extend .fit;
 
+	&.img-fancy {
+		border: 1px solid $pop;
+		padding: 10px;
+		background-color: transparentize(white, .5);
+	}
+}
+
+// Links
 a {
 	color: $font-color;
 	text-decoration: none;
+}
+
+p a {
 	border-bottom: 1px solid $font-color;
-	transition: border-bottom-color 0.25s ease, background-color 0.35s ease;
+	transition: border-bottom 0.25s ease;
 
 	&:hover {
-		border-bottom: 1px solid transparent;
-		background-color: $accent-color;
+		border-bottom: 4px solid $pop;
+	}
+}
+
+// Larger than phablet
+@media (#{$bp-larger-than-phablet}) {
+	.container {
+		width: $container-width-larger-than-mobile;
 	}
 }
 
 // Larger than tablet
 @media (#{$bp-larger-than-tablet}) {
-	body {font-weight: 300;}
+	width: $container-width-larger-than-phablet;
 }
 
 // Larger than desktop
 @media (#{$bp-larger-than-desktop}) {
 
-	.wrapper {
+	.container {
 		padding-top: $space-xl;
 		padding-bottom: $space-xl;
 	}

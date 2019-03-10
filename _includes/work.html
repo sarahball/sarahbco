@@ -1,38 +1,78 @@
 <!-- Work -->
-<div class="row">
-	<div class="ten columns">
-		<h1>Work</h1>
-		<p>I co-founded <a href="http://www.riskopy.com" target="_blank">Riskopy</a>, a data intelligence tool in the fintech space. We were <a href="http://www.coupa.com/newsworthy/press-releases/coupa-aquires-riskopy/" target="_blank">acquired</a> in 2017.</p>
-		<figure class="dsk">
-			<img class="fit" src="{{ '/assets/img/portfolio-riskopy-3.jpg' | absolute_url }}" data-action="zoom" />
-		</figure>
-		<figure class="mb">
-			<img class="fit" src="{{ '/assets/img/riskopy-mb.jpg' | absolute_url }}" data-action="zoom" />
-		</figure>
-		<p>Currently, I'm building developer tools at <a href="http://stepsize.com">Stepsize</a>.</p>
+<section id="work" class="grid">
+	<div class="section-header layout-full">
+		<div class="heading-work"></div>
 	</div>
-</div>
-<div class="row">
-	<div class="five columns">
-		<figure>
-			<img class="fit b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/clients-1.png' | absolute_url }}" data-action="zoom" />
-		</figure>
+	<div class="layout-work-container">
+		<div class="layout-work-image">
+			<figure>
+					<img src="{{ '/assets/img/sarah.jpg' | absolute_url }}" data-action="zoom" />
+				</figure>
+		</div>
+		<div class="layout-work-content">
+			<h4>Product Design</h4>
+			<h2>Stepsize</h2>
+			<div class="layout-work-description">
+				<p>Coming soon!</p>
+			</div>
+		</div>
 	</div>
-	<div class="five columns">
-		<figure>
-			<img class="fit b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ '/assets/img/clients-5.png' | absolute_url }}" data-action="zoom" />
-		</figure>
-	</div>
-</div>
-<div class="row">
-	<div class="ten columns">
-		<p>I always have a few side projects going. Now I'm building an app to make things easier for travelers arriving in a new place.</p>
-		<figure class="dsk">
-			<img class="fit" src="{{ '/assets/img/uponarrival-dsk.jpg' | absolute_url }}" data-action="zoom" />
-		</figure>
-		<figure class="mb">
-				<img class="fit" src="{{ '/assets/img/uponarrival-mb.jpg' | absolute_url }}" data-action="zoom" />
+
+	<div class="layout-work-container">
+		<div class="layout-work-image">
+			<figure>
+				<a class="img" href="{{ site.baseurl }}{% link portfolio-riskopy.html %}">
+					<img class="dsk" src="{{ '/assets/img/portfolio-cover-riskopy-mb.jpg' | absolute_url }}" />
+					<img class="mb" src="{{ '/assets/img/portfolio-riskopy-3.jpg' | absolute_url }}" />
+				</a>
 			</figure>
-		</figure>
+		</div>
+		<div class="layout-work-content">
+			<h4>Product Design</h4>
+			<h2><a href="{{ site.baseurl }}{% link portfolio-riskopy.html %}">Riskopy</a></h2>
+			<div class="layout-work-description">
+				<p>I founded and was Chief Product Officer at a scrappy fintech startup. We built a tool for finance providers that aggregated and contextualized data on 100 million businesses.</p>
+			</div>
+			<a class="btn" href="{{ site.baseurl }}{% link portfolio-riskopy.html %}">Read the case study ➞</a>
+		</div>
 	</div>
-</div>
+
+	<div class="layout-work-container">
+		<div class="layout-work-image">
+			<figure>
+				<a class="img" href="{{ site.baseurl }}{% link portfolio-advent.html %}">
+					<img class="dsk" src="{{ '/assets/img/portfolio-advent-home-tablet.png' | absolute_url }}" />
+					<img class="mb" src="{{ '/assets/img/portfolio-advent-cover.png' | absolute_url }}" />
+				</a>
+			</figure>
+		</div>
+		<div class="layout-work-content">
+			<h4>Product Design</h4>
+			<h2><a href="{{ site.baseurl }}{% link portfolio-advent.html %}">Advent Online Learning</a></h2>
+			<div class="layout-work-description">
+				<p>I was tasked with giving this app a design refresh. This case study takes a look at my process for restructuring the screens to improve usability and how I gave it a more modern look.</p>
+			</div>
+			<a class="btn" href="{{ site.baseurl }}{% link portfolio-advent.html %}">Read the case study ➞</a>
+		</div>
+	</div>
+
+	<div class="layout-work-container">
+		<div class="layout-work-image">
+			<figure>
+				<a class="img" href="{{ site.baseurl }}{% link portfolio-shots.html %}">
+					<img class="dsk" src="{{ '/assets/img/uponarrival-mb.jpg' | absolute_url }}" />
+					<img class="mb" src="{{ '/assets/img/uponarrival-dsk.jpg' | absolute_url }}" />
+				</a>
+			</figure>
+		</div>
+		<div class="layout-work-content">
+			<h4>UI Design・Product Design・Marketing Design</h4>
+			<h2><a href="{{ site.baseurl }}{% link portfolio-shots.html %}">More Interfaces</a></h2>
+			<div class="layout-work-description">
+				<p>Landing pages, marketing design, and other projects.</p>
+			</div>
+			<a class="btn" href="{{ site.baseurl }}{% link portfolio-shots.html %}">See More ➞</a>
+		</div>
+	</div>
+
+</section>

@@ -10,15 +10,41 @@ $bp-larger-than-desktop   : "min-width: 1000px" !default;
 $bp-larger-than-desktophd : "min-width: 1200px" !default;
 
 // Spacing
-$space    : 45px;
-$space-xl : calc(#{$space} + 35px);
-$space-l  : calc(#{$space} + 20px);
-$space-m  : $space;
-$space-s  : calc(#{$space} - 20px);
-$space-xs : calc(#{$space} - 35px);
+$spacer: 0.5rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: $spacer,
+    2: ($spacer * 2),
+    3: ($spacer * 3),
+    4: ($spacer * 4),
+    5: ($spacer * 5),
+    6: ($spacer * 6),
+    7: ($spacer * 7),
+    8: ($spacer * 8),
+    9: ($spacer * 9),
+    10: ($spacer * 10),
+    11: ($spacer * 11),
+    12: ($spacer * 12)
+  ),
+  $spacers
+);
+
+$space    : $spacer * 5  !default;
+$space-xl : $spacer * 10 !default;
+$space-l  : $spacer * 8  !default;
+$space-m  : $spacer * 5  !default;
+$space-s  : $spacer * 3  !default;
+$space-xs : $spacer      !default;
 
 // Colors
-$dark-grey   : #353230 !default;
+$dark  : #262124 !default;
+$light : #FBD9CB !default;
+$pop   : rgb(183, 56, 25) !default; // temp #ab3922 works on Chrome, og was #B62C16
+
+// temp delete
+$dark-grey   : $dark !default;
 $medium-grey : lighten($dark-grey, 45%) !default;
 $light-grey  : #FEFEFE !default;
 
@@ -27,8 +53,9 @@ $secondary-color  : rgba(#dfffe6, 0.65) !default;
 $accent-color     : rgba(#EEDCFF, 0.75) !default;
 
 // Typography
-$font-color: $dark-grey !default;
-$font-family: SF Compact Text, "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-color: $dark !default;
+$font-family: 'Frank Ruhl Libre', serif !default;
+$font-family-secondary: 'Cabin', sans-serif !default;
 
 //Grid Variables
 $container-width: 1200px !default;

@@ -1,14 +1,12 @@
-.container {
-	position: static;
-	width: 90%;
-	max-width: $container-width;
-	margin: 0 auto;
-	padding-left: $space;
-	padding-right: $space;
-	padding-top: $space-xl;
-	padding-bottom: $space-l;
-	box-sizing: border-box;
+.grid {
+	@include grid(12);
 }
+
+// Layouts
+.layout-full {grid-column: span 12;}
+.layout-nearly-full {grid-column: 2 / span 10;}
+.layout-half {grid-column: span 6;}
+.layout-quarter {grid-column: span 3;}
 
 .column,
 .columns {
@@ -17,18 +15,8 @@
 	box-sizing: border-box;
 }
 
-// For devices larger than 550px
-@media (#{$bp-larger-than-phablet}) {
-	.container {
-		width: $container-width-larger-than-mobile;
-	}
-}
-
 // For devices larger than 750px
 @media (#{$bp-larger-than-tablet}) {
-	.container {
-		width: $container-width-larger-than-phablet;
-	}
 	.column,
 	.columns {
 		margin-left: $column-margin;
