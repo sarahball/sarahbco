@@ -11,7 +11,7 @@
 @mixin grid($grid-columns) {
     display: grid;
 	grid-template-columns: repeat($grid-columns, 1fr);
-	grid-gap: 0 40px;
+	grid-gap: 40px;
 }
 
 // Inline SVG
