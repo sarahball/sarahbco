@@ -2,11 +2,13 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ul {
-  list-style: circle inside;
+  list-style: circle outside;
+  margin-left: 20px;
 }
 
 ol {
-  list-style: decimal inside;
+  list-style: decimal outside;
+  margin-left: 20px;
   padding-left: 0;
   margin-top: 0;
 }

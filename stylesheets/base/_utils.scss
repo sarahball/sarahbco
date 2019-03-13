@@ -11,7 +11,10 @@
 	box-sizing: border-box;
 }
 
-.right {float: right;}
+.right {
+	/*float: right;*/
+	text-align: right;
+}
 
 .left {float: left;}
 
@@ -20,21 +23,11 @@
 .center-v {align-self: center;}
 
 .flex {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
+	@include flex(column)
 }
 
 .flex-row {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: row;
+	@include flex(column)
 }
 
 .flex-a {order: 2;}
@@ -71,7 +64,18 @@ a.img {
 		}
 	}
 
-	.mb {display: none;}
+	//.mb {display: none;}
 
+	//.dsk {display: block;}
+}
+
+// Tablet begins at 551px
+@media (#{$bp-tablet-begins}) {
+	.flex-row {@include flex(row)}
+	.mb {display: none;}
 	.dsk {display: block;}
+}
+
+// Desktop begins at 769px
+@media (#{$bp-desktop-begins}) {
 }

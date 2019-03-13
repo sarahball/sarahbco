@@ -7,17 +7,15 @@
 	  {% include analytics.html %}
 	  {% endif %}
 	</head>
-	<body>
-		<div class="wrapper">
-			<div class="container">
-				<div class="twelve columns">
-					<div class="right"><a href="{{ site.baseurl }}{% link index.html %}"><h3>Home</h3></a></div>
-				</div>
-		  	{{ content }}
-		  	<div class="twelve columns">
-		  		<div><a href="{{ site.baseurl }}{% link index.html %}"><h3>Home</h3></a></div>
-		  	</div>
-		  </div>
+	<body class="portfolio">
+		<div class="container">
+			<div class="grid">
+				<a class="right layout-full" href="{{ site.baseurl }}{% link index.html %}"><h4>Home</h4></a>
+			</div>
+			{{ content }}
+			<div class="grid">
+				<a class="layout-full" href="{{ site.baseurl }}{% link index.html %}"><h4>Home</h4></a>
+			</div>
 		</div>
 
 		{% include scripts.html %}

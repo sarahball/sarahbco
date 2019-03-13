@@ -11,7 +11,9 @@
 @mixin grid($grid-columns) {
     display: grid;
 	grid-template-columns: repeat($grid-columns, 1fr);
-	grid-gap: 40px;
+    grid-gap: spacer(2);
+    @media (#{$bp-phablet-begins}) {grid-gap: spacer(3);}
+    @media (#{$bp-tablet-begins}) {grid-gap: spacer(5);}
 }
 
 // Inline SVG
@@ -19,4 +21,15 @@
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" #{$svg} fill="rgb(183, 56, 25)"/></svg>');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+}
+
+// Flexbox
+@mixin flex($direction) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: $direction;
 }

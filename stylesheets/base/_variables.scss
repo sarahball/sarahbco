@@ -1,13 +1,23 @@
 // Variables
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Breakpoints
+// temp Breakpoints
 $bp-mobile-only           : "max-width: 749px" !default;
 $bp-larger-than-mobile    : "min-width: 400px" !default;
 $bp-larger-than-phablet   : "min-width: 550px" !default;
 $bp-larger-than-tablet    : "min-width: 750px" !default;
 $bp-larger-than-desktop   : "min-width: 1000px" !default;
 $bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Breakpoints
+// values
+$bp-phablet : 449px !default;
+$bp-tablet : 769px !default;
+$bp-desktop : 945px !default;
+//queries
+$bp-phablet-begins  : "min-width: #{$bp-phablet}" !default;
+$bp-tablet-begins  : "min-width: #{$bp-tablet}" !default;
+$bp-desktop-begins : "min-width: #{$bp-desktop}" !default;
 
 // Spacing
 $spacer: 0.5rem !default;
@@ -42,6 +52,7 @@ $space-xs : $spacer      !default;
 $dark  : #262124 !default;
 $light : #FBD9CB !default;
 $pop   : rgb(183, 56, 25) !default; // temp #ab3922 works on Chrome, og was #B62C16
+$grey  : lighten($dark, 35%) !default;
 
 // temp delete
 $dark-grey   : $dark !default;
