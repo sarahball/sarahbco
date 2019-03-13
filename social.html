@@ -6,147 +6,26 @@ permalink: /social/
 
 {% include sprite.html %}
 
-<div class="row">
-	<div class="eleven columns">
-		<h1>Social</h1>
+<section id="social" class="grid">
+	<div class="section-header layout-full">
+		<a href="{{ site.baseurl }}{% link index.html %}"><div class="graphic-name"></div></a>
 	</div>
-</div>
-<div id="social">
-	<div class="row">
-		<div class="four columns flex">
-			<a href="https://twitter.com/_satelliteeyes" class="social-icon">
-				<div class="layer">
-					<svg class="twitter-icon" height="50px" width="50px">
-						<use xlink:href="#twitter-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>Twitter</small>
-					</div>
-				</div>
-			</a>
-			<script type="text/javascript" language="javascript">
-			<!--
-			{ coded = "xs@ZL0Lxv.t4"
-			  key = "tzqRKGQD2B4YAHCnFVXSif8Nhwpy7a1IsEdTxgPkrLmbZl9Uu6cW0JOv3jM5oe"
-			  shift=coded.length
-			  link=""
-			  for (i=0; i<coded.length; i++) {
-			    if (key.indexOf(coded.charAt(i))==-1) {
-			      ltr = coded.charAt(i)
-			      link += (ltr)
-			    }
-			    else {     
-			      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-			      link += (key.charAt(ltr))
-			    }
-			  }
-			document.write("<a class='social-icon' href='mailto:"+link+"'><div class='layer'><svg class='email-icon 'height='50px' width='50px'><use xlink:href='#email-icon'></use></svg><div class='dsk'><small>Email</small></div></div></a>")
-			}
-			//-->
-			</script>
-			<a href="https://unsplash.com/@satelliteeyes/" class="social-icon">
-				<div class="layer">
-					<svg class="unsplash-icon" height="50px" width="50px">
-						<use xlink:href="#unsplash-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>unsplash</small>
-					</div>
-				</div>
-			</a>
-			<a href="https://foursquare.com/_satelliteeyes" class="social-icon">
-				<div class="layer">
-					<svg class="foursquare-icon" height="50px" width="50px">
-						<use xlink:href="#foursquare-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>foursquare</small>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="four columns flex">
-			<a href="http://instagram.com/_satelliteeyes/" class="social-icon">
-				<div class="layer">
-					<svg class="instagram-icon" height="50px" width="50px">
-						<use xlink:href="#instagram-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>instagram</small>
-					</div>
-				</div>
-			</a>
-			<a href="https://www.linkedin.com/in/sarahaball/" class="social-icon">
-				<div class="layer">
-					<svg class="linkedin-icon" height="50px" width="50px">
-						<use xlink:href="#linkedin-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>linkedin</small>
-					</div>
-				</div>
-			</a><a href="https://medium.com/@_satelliteeyes" class="social-icon">
-				<div class="layer">
-					<svg class="medium-icon" height="50px" width="50px">
-						<use xlink:href="#medium-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>Medium</small>
-					</div>
-				</div>
-			</a>
-			<a href="https://www.goodreads.com/user/show/6589002-sarah-ball" class="social-icon">
-				<div class="layer">
-					<svg class="goodreads-icon" height="50px" width="50px">
-						<use xlink:href="#goodreads-icon"></use>
-					</svg>
-					<div class="dsk" class="dsk">
-						<small>Goodreads</small>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="four columns flex">
-			<a href="https://dribbble.com/satelliteeyes" class="social-icon">
-				<div class="layer">
-					<svg class="dribbble-icon" height="50px" width="50px">
-						<use xlink:href="#dribbble-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>dribbble</small>
-					</div>
-				</div>
-			</a>
-			<a href="https://github.com/sarahball" class="social-icon">
-				<div class="layer">
-					<svg class="github-icon" height="50px" width="50px">
-						<use xlink:href="#github-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>github</small>
-					</div>
-				</div>
-			</a>
-			<a href="https://nomadlist.com/@_satelliteeyes" class="social-icon">
-				<div class="layer">
-					<svg class="nomadlist-icon" height="50px" width="50px">
-						<use xlink:href="#nomadlist-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>nomadlist</small>
-					</div>
-				</div>
-			</a>
-			<a href="https://open.spotify.com/user/satellite_eyes" class="social-icon">
-				<div class="layer">
-					<svg class="spotify-icon" height="50px" width="50px">
-						<use xlink:href="#spotify-icon"></use>
-					</svg>
-					<div class="dsk">
-						<small>spotify</small>
-					</div>
-				</div>
-			</a>
-		</div>
+	<div class="layout-half">
+		<figure>
+			<img class="img-fancy" src="{{ '/assets/img-temp/sarah-2.jpg' | absolute_url }}" />
+		</figure>
 	</div>
-</div>
+	<div class="layout-quarter">
+		<h2><a href="http://twitter.com/sarahdotgif">Twitter</a></h2>
+		<h2><a href="http://instagram.com/sarahdotgif">Instagram</a></h2>
+		<h2><a href="http://dribbble.com/sarahball">Dribbble</a></h2>
+		<h2><a href="http://medium.com/@sarahdotgif">Medium</a></h2>
+	</div>
+	<div class="layout-quarter">
+		<h2><a href="http://angel.co/sarah-ball">AngelList</a></h2>
+		<h2><a href="https://www.linkedin.com/in/sarahaball/">LinkedIn</a></h2>
+		<h2><a href="https://unsplash.com/sarahdotgif">Unsplash</a></h2>
+		<h2><a href="http://github.com/sarahball">Github</a></h2>
+	</div>
+</section>
+

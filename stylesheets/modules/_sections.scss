@@ -121,12 +121,14 @@
 
 // Work
 .layout-work-image {
+	@extend .g_;
 	@extend .g_4-d;
 	@extend .off_1-d;
 	@extend .g_5-t;
 	@extend .g_9-p;
 }
 .layout-work-content {
+	@extend .g_;
 	@extend .g_4-d;
 	@extend .g_7-t;
 	@extend .g_12-p;
@@ -137,8 +139,6 @@
 	.layout-work-image {margin-bottom: spacer(5);}
 }
 
-
-
 // Sarah
 #sarah {
 	h2 {
@@ -146,6 +146,13 @@
 		text-transform: lowercase;
 	}
 }
+
+// Social
+#social {
+	margin-bottom: spacer(10);
+	h2 {text-transform: lowercase;}
+}
+
 
 /*// Grid Sections
 #intro {
@@ -199,7 +206,7 @@
 */
 // temp Sections
 
-#social {
+/*#social {
 	text-align: center;
 	margin: 0 auto;
 	max-width: 640px;
@@ -209,7 +216,7 @@
 		align-items: center;
 		justify-content: center;
 	}
-}
+}*/
 
 .portfolio-section {margin-bottom: $space-xl;}
 
