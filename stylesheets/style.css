@@ -284,23 +284,16 @@ h1, h2, h3, h4, .btn, button, h5, h6, p, figcaption {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h5, h6 {
+h1, h2, h3, h4, .btn, button, h5, h6 {
   font-family: "Cardo", serif; }
 
-h4, .btn, button {
-  font-family: sans-serif; }
-
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 900;
-  line-height: 4.5rem;
   letter-spacing: -0.56px; }
-  @media (min-width: 448px) {
-    h1 {
-      font-size: 3.5rem; } }
   @media (min-width: 768px) {
     h1 {
-      font-size: 4rem; } }
+      font-size: 3.25rem; } }
 
 h2, .h2 {
   font-size: 2rem;
