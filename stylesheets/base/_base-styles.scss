@@ -15,7 +15,7 @@ html {
 
 body {
 	min-height: 100vh;
-	@include backgroundGradient;
+	background: $grey;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -31,7 +31,6 @@ body {
 	margin: 0 auto;
 	padding-top: spacer(5);
 	padding-bottom: spacer(5);
-	width: 90%;
 	max-width: $container-width;
 	@media (#{$bp-phablet-begins}) {width: $container-width-phablet;}
 	@media (#{$bp-tablet-begins}) {width: $container-width-tablet;}
@@ -54,12 +53,6 @@ img[src$=".gif"], img[src$=".png"], img[src$=".jpg"] {
 img {
 	max-width: 100%;
 	box-sizing: border-box;
-
-	&.img-fancy {
-		border: 1px solid $pop;
-		padding: 10px;
-		background-color: transparentize(white, .5);
-	}
 }
 
 // Links
