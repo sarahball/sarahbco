@@ -204,7 +204,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Frank Ruhl Libre", serif;
-  color: #262124; }
+  color: #252120; }
 
 .container {
   margin: 0 auto;
@@ -233,19 +233,19 @@ img {
   max-width: 100%;
   box-sizing: border-box; }
   img.img-fancy {
-    border: 1px solid #b73819;
+    border: 1px solid #2055CD;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.5); }
 
 a {
-  color: #262124;
+  color: #252120;
   text-decoration: none; }
 
 p a, figcaption a {
-  border-bottom: 1px solid #262124;
+  border-bottom: 1px solid #252120;
   transition: border-bottom 0.25s ease; }
   p a:hover, figcaption a:hover {
-    border-bottom: 4px solid #b73819; }
+    border-bottom: 4px solid #2055CD; }
 
 @media (min-width: 944px) {
   .container {
@@ -356,7 +356,7 @@ p, figcaption, span, ul, ol, li {
   margin-bottom: 1.5rem; }
   p.sidebar, figcaption.sidebar, span.sidebar, ul.sidebar, ol.sidebar, li.sidebar {
     font-size: 1.1rem;
-    color: #86747f;
+    color: #F1F4F5;
     line-height: 2rem;
     font-weight: 500;
     letter-spacing: -.25px; }
@@ -365,11 +365,11 @@ p, figcaption, span, ul, ol, li {
 
 .btn, button {
   margin-bottom: 0;
-  color: #FBD9CB;
+  color: #FFF;
   text-align: center; }
 
 figcaption {
-  color: #86747f;
+  color: #F1F4F5;
   margin-top: 1rem;
   font-weight: 500;
   letter-spacing: -.25px;
@@ -711,7 +711,7 @@ li {
   line-height: 42px;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #b73819;
+  background-color: #2055CD;
   border: none;
   cursor: pointer;
   box-sizing: border-box;
@@ -719,7 +719,7 @@ li {
 
 .btn:hover,
 button:hover {
-  background-color: #e45a39;
+  background-color: #5581e4;
   -webkit-transition: background-color 0.1s ease; }
 
 .btn.disabled,
@@ -885,15 +885,15 @@ img[data-action="zoom"] {
   transition: all 300ms; }
 
 .zoom-img-wrap .shadow {
-  -webkit-filter: drop-shadow(0px 0px 0px #262124);
-  filter: drop-shadow(0px 0px 0px #262124); }
+  -webkit-filter: drop-shadow(0px 0px 0px #252120);
+  filter: drop-shadow(0px 0px 0px #252120); }
 
 img.zoom-img {
   cursor: zoom-out; }
 
 .zoom-overlay {
   z-index: 420;
-  background: rgba(38, 33, 36, 0.8);
+  background: rgba(37, 33, 32, 0.8);
   position: fixed;
   top: 0;
   left: 0;

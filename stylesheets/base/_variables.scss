@@ -34,10 +34,10 @@ $spacers: map-merge(
 );
 
 // Colors
-$dark  : #262124 !default;
-$light : #FBD9CB !default;
-$pop   : rgb(183, 56, 25) !default; // temp #ab3922 works on Chrome, og was #B62C16
-$grey  : lighten($dark, 35%) !default;
+$dark  : #252120 !default;
+$light : #FFF !default;
+$pop   : #2055CD !default;
+$grey  : #F1F4F5 !default;
 
 // Typography
 $font-color: $dark !default;
