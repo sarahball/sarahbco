@@ -203,7 +203,7 @@ body {
   font-size: 1em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Cardo", serif;
   color: #252120; }
 
 .container {
@@ -211,13 +211,13 @@ body {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   width: 90%;
-  max-width: 1200px; }
+  max-width: 960px; }
   @media (min-width: 448px) {
     .container {
-      width: 85%; } }
+      width: 80%; } }
   @media (min-width: 768px) {
     .container {
-      width: 80%; } }
+      width: 78%; } }
 
 figure {
   margin: 0;
@@ -304,10 +304,10 @@ h1, h2, h3, h4, .btn, button, h5, h6, p, figcaption {
   padding: 0; }
 
 h1, h2, h3, h5, h6 {
-  font-family: "Frank Ruhl Libre", serif; }
+  font-family: "Cardo", serif; }
 
 h4, .btn, button {
-  font-family: "Cabin", sans-serif; }
+  font-family: sans-serif; }
 
 h1 {
   font-size: 3rem;
