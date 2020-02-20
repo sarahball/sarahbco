@@ -81,26 +81,3 @@ figcaption {
 }
 
 li {margin-bottom: 0;}
-
-// temp old
-
-small {
-	text-transform: uppercase;
-	font-size: .65em;
-	letter-spacing: 1px;
-	font-weight: 700;
-}
-
-/*figcaption {
-  @extend small;
-  color: $medium-grey;
-  text-align: center;
-  margin-top: 0.5rem;
-
-  a {
-    color: $medium-grey;
-    border-bottom: 1px solid $medium-grey;
-  }
-}*/
-
-.heading-inline {margin-top: 0;}

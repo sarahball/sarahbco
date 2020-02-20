@@ -2,7 +2,6 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 html {
-	background-color: $light-grey;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,15 +29,13 @@ body {
 
 .container {
 	margin: 0 auto;
-	padding-top: $space-m;
-	padding-bottom: $space-m;
+	padding-top: spacer(5);
+	padding-bottom: spacer(5);
 	width: 90%;
 	max-width: $container-width;
+	@media (#{$bp-phablet-begins}) {width: $container-width-phablet;}
+	@media (#{$bp-tablet-begins}) {width: $container-width-tablet;}
 }
-
-.inner {padding: $space-s;}
-
-.heading {padding: $space-l $space-s 0 $space-s;}
 
 figure {
 	margin: 0;
@@ -55,7 +52,8 @@ img[src$=".gif"], img[src$=".png"], img[src$=".jpg"] {
 }
 
 img {
-	@extend .fit;
+	max-width: 100%;
+	box-sizing: border-box;
 
 	&.img-fancy {
 		border: 1px solid $pop;
@@ -79,23 +77,10 @@ p a {
 	}
 }
 
-// Larger than phablet
-@media (#{$bp-larger-than-phablet}) {
+// Desktop
+@media (#{$bp-desktop-begins}) {
 	.container {
-		width: $container-width-larger-than-mobile;
-	}
-}
-
-// Larger than tablet
-@media (#{$bp-larger-than-tablet}) {
-	width: $container-width-larger-than-phablet;
-}
-
-// Larger than desktop
-@media (#{$bp-larger-than-desktop}) {
-
-	.container {
-		padding-top: $space-xl;
-		padding-bottom: $space-xl;
+		padding-top: spacer(10);
+		padding-bottom: spacer(10);
 	}
 }

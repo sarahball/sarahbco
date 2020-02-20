@@ -41,37 +41,18 @@ $spacers: map-merge(
   $spacers
 );
 
-$space    : $spacer * 5  !default;
-$space-xl : $spacer * 10 !default;
-$space-l  : $spacer * 8  !default;
-$space-m  : $spacer * 5  !default;
-$space-s  : $spacer * 3  !default;
-$space-xs : $spacer      !default;
-
 // Colors
 $dark  : #262124 !default;
 $light : #FBD9CB !default;
 $pop   : rgb(183, 56, 25) !default; // temp #ab3922 works on Chrome, og was #B62C16
 $grey  : lighten($dark, 35%) !default;
 
-// temp delete
-$dark-grey   : $dark !default;
-$medium-grey : lighten($dark-grey, 45%) !default;
-$light-grey  : #FEFEFE !default;
-
-$primary-color    : rgba(#C3F2E4, 0.65) !default;
-$secondary-color  : rgba(#dfffe6, 0.65) !default;
-$accent-color     : rgba(#EEDCFF, 0.75) !default;
-
 // Typography
 $font-color: $dark !default;
 $font-family: 'Frank Ruhl Libre', serif !default;
 $font-family-secondary: 'Cabin', sans-serif !default;
 
-//Grid Variables
+//Container
 $container-width: 1200px !default;
-$container-width-larger-than-mobile: 85% !default;
-$container-width-larger-than-phablet: 80% !default;
-$total-columns: 12 !default;
-$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
-$column-margin: 6% !default; // space between columns
+$container-width-phablet: 85% !default;
+$container-width-tablet: 80% !default;

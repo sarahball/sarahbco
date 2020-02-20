@@ -11,8 +11,8 @@ img[data-action="zoom"] {
 }
 .zoom-img-wrap {
   .shadow {
-    -webkit-filter: drop-shadow(0px 0px 0px lighten($dark-grey, 0%));
-    filter: drop-shadow(0px 0px 0px lighten($dark-grey, 0%));
+    -webkit-filter: drop-shadow(0px 0px 0px lighten($dark, 0%));
+    filter: drop-shadow(0px 0px 0px lighten($dark, 0%));
   }
 }
 img.zoom-img {
@@ -20,7 +20,7 @@ img.zoom-img {
 }
 .zoom-overlay {
   z-index: 420;
-  background: rgba($dark-grey, 0.8);
+  background: rgba($dark, 0.8);
   position: fixed;
   top: 0;
   left: 0;

@@ -6,76 +6,29 @@
 	box-sizing: border-box;
 }
 
-.fit {
-	max-width: 100%;
-	box-sizing: border-box;
-}
-
-.right {
-	/*float: right;*/
-	text-align: right;
-}
-
-.left {float: left;}
+.right {text-align: right;}
 
 .center {margin: 0 auto;}
 
 .center-v {align-self: center;}
 
-.flex {
-	@include flex(column)
-}
+.flex {@include flex(column);}
 
 .flex-row {
-	@include flex(column)
+	@include flex(column);
+	@media (#{$bp-phablet-begins}) {flex-direction: row;}
 }
 
-.flex-a {order: 2;}
+.dsk {
+	display: none;
+	@media (#{$bp-tablet-begins}) {display: block;}
+}
 
-.flex-b {order: 1;}
-
-.dsk {display: none;}
+.mb {
+	@media (#{$bp-tablet-begins}) {display: none;}
+}
 
 a.img {
 	border-bottom: none;
 	&:hover {background: none;}
-}
-
-// figure.space {margin-bottom: $space-xl;} // temp
-
-// Larger than phablet
-@media (#{$bp-larger-than-tablet}) {
-	.flex {flex-direction: row;}
-
-	.flex-a {order: 1;}
-
-	.flex-b {order: 2;}
-
-	.giraffe {
-		position: relative;
-
-		figure {
-			position: absolute;
-			top: 0;
-			left: 0;
-			margin-top: 0;
-			margin-right: 0;
-			margin-left: 0;
-		}
-	}
-
-	//.mb {display: none;}
-
-	//.dsk {display: block;}
-}
-
-// Tablet begins at 551px
-@media (#{$bp-tablet-begins}) {
-	.flex-row {@include flex(row)}
-	.mb {display: none;}
-	.dsk {display: block;}
-}
-
-// Desktop begins at 769px
-@media (#{$bp-desktop-begins}) {
 }
