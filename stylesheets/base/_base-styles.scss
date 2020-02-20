@@ -16,10 +16,6 @@ html {
 body {
 	min-height: 100vh;
 	background: $grey;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	font-size: 1em;
 	line-height: 1.6;
 	font-weight: 400;
@@ -31,9 +27,13 @@ body {
 	margin: 0 auto;
 	padding-top: spacer(5);
 	padding-bottom: spacer(5);
-	max-width: $container-width;
 	@media (#{$bp-phablet-begins}) {width: $container-width-phablet;}
 	@media (#{$bp-tablet-begins}) {width: $container-width-tablet;}
+	@media (#{$bp-desktop-begins}) {
+		width: $container-width-desktop;
+		padding-top: spacer(10);
+		padding-bottom: spacer(10);
+	}
 }
 
 figure {
@@ -67,13 +67,5 @@ p a {
 
 	&:hover {
 		border-bottom: 4px solid $pop;
-	}
-}
-
-// Desktop
-@media (#{$bp-desktop-begins}) {
-	.container {
-		padding-top: spacer(10);
-		padding-bottom: spacer(10);
 	}
 }
