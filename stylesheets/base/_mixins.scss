@@ -1,12 +1,3 @@
-// Background Gradient
-@mixin backgroundGradient{ // temp delete
-    background: #fbeacb; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #fbeacb 0%, #fdfde7 35%, #ffbe85 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #fbeacb 0%,#fdfde7 35%,#ffbe85 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #fbeacb 0%,#fdfde7 35%,#ffbe85 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbeacb', endColorstr='#ffbe85',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
 // 12-Column Grid
 @mixin grid($grid-columns) {
     display: grid;
@@ -18,7 +9,7 @@
 
 // Inline SVG
 @mixin svg($svg) {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" #{$svg} fill="rgb(183, 56, 25)"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" #{$svg} fill="rgb(32, 85, 205)"/></svg>');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

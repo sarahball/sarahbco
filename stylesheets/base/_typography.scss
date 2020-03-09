@@ -14,16 +14,15 @@ h1 {
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: -0.56px;
-  @media (#{$bp-tablet-begins}) {font-size: 3.25rem;}
+  @media (#{$bp-desktop-begins}) {font-size: 3rem;}
 }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: 1.45rem;
   font-weight: 900;
-  line-height: 3rem;
   letter-spacing: -0.35px;
-  margin-bottom: spacer(2);
-  @media (#{$bp-phablet-begins}) {font-size: 2.5rem;}
+  @media (#{$bp-desktop-begins}) {font-size: 1.75rem;}
+  &.tight {line-height: 1.2;}
 }
 
 h3 {
@@ -31,7 +30,7 @@ h3 {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: -0.35px;
-  @media (#{$bp-phablet-begins}) {
+  @media (#{$bp-desktop-begins}) {
     font-size: 2rem;
     line-height: 2.5rem;
   }
@@ -59,6 +58,28 @@ p, span, ul, ol, li {
     font-weight: 500;
     letter-spacing: -.25px;
     strong {font-weight: 900;}
+  }
+}
+
+span {
+  display: inline-block;
+  margin: 0;
+}
+
+.strike {
+  position: relative;
+  //margin-right: 8px;
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    background-image: url(../assets/svg/dash.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 6px;
   }
 }
 

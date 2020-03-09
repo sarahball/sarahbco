@@ -3,13 +3,23 @@
 
 // Breakpoints
 // values
-$bp-phablet : 448px !default;
-$bp-tablet : 768px !default;
-$bp-desktop : 944px !default;
+$bp-phablet: 576px !default;
+$bp-tablet: 768px !default;
+$bp-desktop: 992px !default;
+$bp-desktop-xl: 1400px !default;
 //queries
-$bp-phablet-begins  : "min-width: #{$bp-phablet}" !default;
-$bp-tablet-begins  : "min-width: #{$bp-tablet}" !default;
-$bp-desktop-begins : "min-width: #{$bp-desktop}" !default;
+$bp-phablet-begins: "min-width: #{$bp-phablet}" !default;
+$bp-tablet-begins: "min-width: #{$bp-tablet}" !default;
+$bp-desktop-begins: "min-width: #{$bp-desktop}" !default;
+$bp-desktop-xl-begins: "min-width: #{$bp-desktop-xl}" !default;
+
+//Container
+$container-width: 80% !default;
+$container-width-max: 960px !default;
+$container-width-phablet: 80% !default;
+$container-width-tablet: 80% !default;
+$container-width-desktop: 80% !default;
+$container-width-desktop-xl: 960px !default;
 
 // Spacing
 $spacer: 0.5rem !default;
@@ -37,14 +47,10 @@ $spacers: map-merge(
 $dark  : #252120 !default;
 $light : #FFF !default;
 $pop   : #2055CD !default;
+$poprgb: rgba(32, 85, 205, 100) !default;
 $grey  : #F1F4F5 !default;
 
 // Typography
 $font-color: $dark !default;
 $font-family: 'Cardo', serif !default;
 $font-family-secondary: sans-serif !default;
-
-//Container
-$container-width-desktop: 960px !default;
-$container-width-phablet: 80% !default;
-$container-width-tablet: 78% !default;

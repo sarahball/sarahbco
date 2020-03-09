@@ -23,17 +23,32 @@ body {
 	color: $font-color;
 }
 
-.container {
+// .container, // temp delete container
+main {
 	margin: 0 auto;
 	padding-top: spacer(5);
 	padding-bottom: spacer(5);
-	@media (#{$bp-phablet-begins}) {width: $container-width-phablet;}
-	@media (#{$bp-tablet-begins}) {width: $container-width-tablet;}
+	width: $container-width;
+	max-width: $container-width-max;
 	@media (#{$bp-desktop-begins}) {
-		width: $container-width-desktop;
 		padding-top: spacer(10);
 		padding-bottom: spacer(10);
 	}
+}
+
+.fullpage {
+	width: 100vw;
+  position: relative;
+  left: 50%;
+  //right: 50%;
+  margin-left: -50vw;
+  //margin-right: -50vw;
+  @media (#{$bp-desktop-xl-begins}) {
+		width: $bp-desktop-xl;
+		left: calc(50% + calc(calc(100vw - #{$bp-desktop-xl}) / 2));
+    //position: relative;
+    //margin-left: -50vw;
+  }
 }
 
 figure {
