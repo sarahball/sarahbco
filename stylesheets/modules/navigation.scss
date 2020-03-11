@@ -17,6 +17,7 @@ nav {
 			&:last-of-type {padding-right: 0;}
 		}
 		& > *:hover::before {
+			//color: rgba($pop, .25);
 			color: lightgray;
 	    font-size: 3.5em;
 	    font-style: italic;

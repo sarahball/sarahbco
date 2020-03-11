@@ -67,6 +67,7 @@
 
 #intro {
 	margin-bottom: 0;
+	@media (#{$bp-desktop-begins}) {margin-bottom: spacer(10);}
 	.image {
 		grid-column: 1 / span 12;
 		grid-row: 1 / 2;
@@ -183,12 +184,13 @@
 			@media (#{$bp-phablet-begins}) {display: block;}
 		}
 		.d {
-			margin: 0;
+			//margin: 0;
 			display: none;
 			grid-column: 1 / span 3;
 			grid-row: 2;
 			align-self: flex-start;
 			max-width: 540px;
+			line-height: 1.15;
 			@media (#{$bp-desktop-begins}) {display: block;}
 		}
 	}
@@ -213,6 +215,7 @@
 
 #hero-sub {
 	margin-top: 0;
+	line-height: 1.15;
 	@media (#{$bp-phablet-begins}) {margin-top: spacer(5);}
 	@media (#{$bp-desktop-begins}) {display: none;}
 	& > * {margin: 0;}

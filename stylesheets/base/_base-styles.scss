@@ -64,10 +64,8 @@ a {
 }
 
 p a {
-	border-bottom: 1px solid $font-color;
-	transition: border-bottom 0.25s ease;
+	font-weight: 700;
+	transition: color .15s ease;
 
-	&:hover {
-		border-bottom: 4px solid $pop;
-	}
+	&:hover {color: $pop;}
 }

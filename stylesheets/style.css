@@ -226,10 +226,10 @@ a {
   text-decoration: none; }
 
 p a, figcaption a {
-  border-bottom: 1px solid #252120;
-  transition: border-bottom 0.25s ease; }
+  font-weight: 700;
+  transition: color .15s ease; }
   p a:hover, figcaption a:hover {
-    border-bottom: 4px solid #2055CD; }
+    color: #2055CD; }
 
 .full {
   width: 100%;
@@ -304,10 +304,9 @@ p, figcaption {
   margin-bottom: 1.15rem; }
 
 h1, h2, h3, h4, .btn, button, h5 {
-  margin: 2.75rem 0 1.05rem;
   font-family: "Cardo", serif;
   font-weight: 700;
-  line-height: 1.15; }
+  line-height: 1.4; }
 
 h1 {
   margin-top: 0;
@@ -339,6 +338,10 @@ span {
   display: inline-block;
   margin: 0; }
 
+b {
+  font-weight: 700;
+  color: #2055CD; }
+
 .strike {
   position: relative; }
   .strike:before {
@@ -353,6 +356,26 @@ span {
     background-size: contain;
     height: 6px; }
 
+/*.underline {
+  position: relative;
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    background-image: url(../assets/svg/underline1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 6px;
+  }
+  &:nth-child(1):before {background-image: url(../assets/svg/underline1.svg);}
+  &:nth-child(2):before {background-image: url(../assets/svg/underline2.svg);}
+  &:nth-child(3):before {background-image: url(../assets/svg/underline3.svg);}
+  &:nth-child(4):before {background-image: url(../assets/svg/underline4.svg);}
+  &:nth-child(5):before {background-image: url(../assets/svg/underline5.svg);}
+}*/
 .btn, button {
   margin-bottom: 0;
   color: #FFF;
@@ -377,6 +400,9 @@ li {
   @media (min-width: 768px) {
     .grid {
       grid-gap: 2.5rem; } }
+  @media (min-width: 992px) {
+    .grid {
+      grid-gap: 4rem; } }
 
 .layout-full, .portfolio h1, .portfolio h2, .portfolio .portfolio-subtitle {
   grid-column: span 12; }
@@ -866,6 +892,9 @@ nav {
 
 #intro {
   margin-bottom: 0; }
+  @media (min-width: 992px) {
+    #intro {
+      margin-bottom: 5rem; } }
   #intro .image {
     grid-column: 1 / span 12;
     grid-row: 1 / 2;
@@ -951,12 +980,12 @@ nav {
         #intro .hero-container .c {
           display: block; } }
     #intro .hero-container .d {
-      margin: 0;
       display: none;
       grid-column: 1 / span 3;
       grid-row: 2;
       align-self: flex-start;
-      max-width: 540px; }
+      max-width: 540px;
+      line-height: 1.15; }
       @media (min-width: 992px) {
         #intro .hero-container .d {
           display: block; } }
@@ -979,7 +1008,8 @@ nav {
       display: none; } }
 
 #hero-sub {
-  margin-top: 0; }
+  margin-top: 0;
+  line-height: 1.15; }
   @media (min-width: 576px) {
     #hero-sub {
       margin-top: 2.5rem; } }
