@@ -5,60 +5,55 @@
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
+  font-weight: 400;
 }
 
-//h1, h2, h3, h4, h5, h6 {font-family: $font-family;}
+html {
+  font-size: 112.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: calc(16px + .35vw);
+  font-family: $font-family;
+  color: $font-color;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+p {margin-bottom: 1.15rem;}
+
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: $font-family;
+  font-weight: 700;
+  line-height: 1.15;
+}
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.56px;
-  @media (#{$bp-desktop-begins}) {font-size: 3rem;}
+  margin-top: 0;
+  font-size: 1.802em;
 }
 
-h2, .h2 {
-  font-size: 1.45rem;
-  font-weight: 700;
-  letter-spacing: -0.35px;
-  @media (#{$bp-desktop-begins}) {font-size: 1.75rem;}
-  &.tight {line-height: 1.2;}
-}
+h2 {font-size: 1.602em;}
 
-h3 {
-  font-size: 1.75rem;
+h3 {font-size: 1.424em;}
+
+h4 {font-size: 1.266em;}
+
+h5 {font-size: 1.125em;}
+
+h6 {
+  font-size: 0.889em;
   font-weight: 400;
-  line-height: 2rem;
-  letter-spacing: -0.35px;
-  @media (#{$bp-desktop-begins}) {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-}
-
-h4 {
-  font-size: 0.8125rem;
   text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.68px;
-  margin-bottom: spacer(1);
+  font-style: italic;
+  letter-spacing: 0.02em;
 }
 
-p, span, ul, ol, li {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 2rem;
-  margin-bottom: spacer(3);
-
-  &.sidebar {
-    font-size: 1.1rem;
-    color: $grey;
-    line-height: 2rem;
-    font-weight: 500;
-    letter-spacing: -.25px;
-    strong {font-weight: 700;}
-  }
-}
+small {font-size: 0.79em;}
 
 span {
   display: inline-block;
@@ -67,7 +62,6 @@ span {
 
 .strike {
   position: relative;
-  //margin-right: 8px;
   &:before {
     content: '';
     display: inline-block;
@@ -93,8 +87,8 @@ figcaption {
   @extend p;
   color: $grey;
   margin-top: spacer(2);
-  font-weight: 500;
-  letter-spacing: -.25px;
+  //font-weight: 500;
+  //letter-spacing: -.25px;
   text-align: center;
 }
 

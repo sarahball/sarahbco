@@ -180,19 +180,11 @@ th {
   padding: 0; }
 
 html {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth; }
 
 body {
   min-height: 100vh;
-  background: #F1F4F5;
-  font-size: 1em;
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: "Cardo", serif;
-  color: #252120; }
+  background: #F1F4F5; }
 
 main {
   margin: 0 auto;
@@ -293,57 +285,55 @@ a.img {
 
 h1, h2, h3, h4, .btn, button, h5, h6, p, figcaption {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-weight: 400; }
+
+html {
+  font-size: 112.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-size: calc(16px + .35vw);
+  font-family: "Cardo", serif;
+  color: #252120;
+  font-weight: 400;
+  line-height: 1.65; }
+
+p, figcaption {
+  margin-bottom: 1.15rem; }
+
+h1, h2, h3, h4, .btn, button, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  line-height: 1.15; }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.56px; }
-  @media (min-width: 992px) {
-    h1 {
-      font-size: 3rem; } }
+  margin-top: 0;
+  font-size: 1.802em; }
 
-h2, .h2 {
-  font-size: 1.45rem;
-  font-weight: 700;
-  letter-spacing: -0.35px; }
-  @media (min-width: 992px) {
-    h2, .h2 {
-      font-size: 1.75rem; } }
-  h2.tight, .h2.tight {
-    line-height: 1.2; }
+h2 {
+  font-size: 1.602em; }
 
 h3 {
-  font-size: 1.75rem;
-  font-weight: 400;
-  line-height: 2rem;
-  letter-spacing: -0.35px; }
-  @media (min-width: 992px) {
-    h3 {
-      font-size: 2rem;
-      line-height: 2.5rem; } }
+  font-size: 1.424em; }
 
 h4, .btn, button {
-  font-size: 0.8125rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.68px;
-  margin-bottom: 0.5rem; }
+  font-size: 1.266em; }
 
-p, figcaption, span, ul, ol, li {
-  font-size: 1.25rem;
+h5 {
+  font-size: 1.125em; }
+
+h6 {
+  font-size: 0.889em;
   font-weight: 400;
-  line-height: 2rem;
-  margin-bottom: 1.5rem; }
-  p.sidebar, figcaption.sidebar, span.sidebar, ul.sidebar, ol.sidebar, li.sidebar {
-    font-size: 1.1rem;
-    color: #F1F4F5;
-    line-height: 2rem;
-    font-weight: 500;
-    letter-spacing: -.25px; }
-    p.sidebar strong, figcaption.sidebar strong, span.sidebar strong, ul.sidebar strong, ol.sidebar strong, li.sidebar strong {
-      font-weight: 700; }
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.02em; }
+
+small {
+  font-size: 0.79em; }
 
 span {
   display: inline-block;
@@ -371,8 +361,6 @@ span {
 figcaption {
   color: #F1F4F5;
   margin-top: 1rem;
-  font-weight: 500;
-  letter-spacing: -.25px;
   text-align: center; }
 
 li {
@@ -832,32 +820,24 @@ nav {
         padding-right: 2.5rem; }
         nav a:last-of-type {
           padding-right: 0; } }
-    nav a span {
-      text-transform: uppercase;
+    nav a > *:hover::before {
+      color: lightgray;
+      font-size: 3.5em;
       font-style: italic;
-      font-size: 1em;
-      letter-spacing: 0.02em;
-      line-height: 2; }
-      nav a span:hover::before {
-        color: lightgray;
-        font-size: 3.5em;
-        font-style: italic;
-        line-height: 0;
-        position: absolute;
-        top: 21px;
-        text-transform: lowercase; }
-    nav a:nth-child(1) span:hover::before {
+      line-height: 0;
+      position: absolute;
+      top: 21px;
+      left: -.55em; }
+    nav a:nth-child(1) > *:hover::before {
       content: "1";
-      left: -25px; }
-    nav a:nth-child(2) span:hover::before {
-      content: "2";
-      left: -29px; }
-    nav a:nth-child(3) span:hover::before {
-      content: "3";
-      left: -31px; }
-    nav a:nth-child(4) span:hover::before {
+      left: -.5em; }
+    nav a:nth-child(2) > *:hover::before {
+      content: "2"; }
+    nav a:nth-child(3) > *:hover::before {
+      content: "3"; }
+    nav a:nth-child(4) > *:hover::before {
       content: "4";
-      left: -28px; }
+      left: -.525em; }
 
 .home section {
   margin-bottom: 5rem; }
@@ -970,6 +950,7 @@ nav {
         #intro .hero-container .c {
           display: block; } }
     #intro .hero-container .d {
+      margin: 0;
       display: none;
       grid-column: 1 / span 3;
       grid-row: 2;

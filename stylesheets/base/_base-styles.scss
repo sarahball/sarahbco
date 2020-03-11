@@ -2,26 +2,12 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 html {
-	font-size: 16px;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-}
-
-//:root {font-size: calc(.35vw + 14.6px);}
-
-@media (min-width: 96.429em) {
-	//:root {font-size: 1.22rem;}
 }
 
 body {
 	min-height: 100vh;
 	background: $grey;
-	font-size: 1em;
-	line-height: 1.6;
-	font-weight: 400;
-	font-family: $font-family;
-	color: $font-color;
 }
 
 // .container, // temp delete container
