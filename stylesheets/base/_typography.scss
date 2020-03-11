@@ -7,19 +7,18 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {font-family: $font-family;}
-//h4 {font-family: $font-family-secondary;}
+//h1, h2, h3, h4, h5, h6 {font-family: $font-family;}
 
 h1 {
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.56px;
   @media (#{$bp-desktop-begins}) {font-size: 3rem;}
 }
 
 h2, .h2 {
   font-size: 1.45rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.35px;
   @media (#{$bp-desktop-begins}) {font-size: 1.75rem;}
   &.tight {line-height: 1.2;}
@@ -57,7 +56,7 @@ p, span, ul, ol, li {
     line-height: 2rem;
     font-weight: 500;
     letter-spacing: -.25px;
-    strong {font-weight: 900;}
+    strong {font-weight: 700;}
   }
 }
 

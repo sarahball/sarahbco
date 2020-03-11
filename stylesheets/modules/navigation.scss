@@ -1,0 +1,52 @@
+// Navigation
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+nav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-bottom: spacer(7);
+	@media (#{$bp-phablet-begins}) {
+		flex-direction: row;
+		margin-bottom: spacer(12);
+	}
+	a {
+		position: relative;
+		@media (#{$bp-phablet-begins}) {
+			padding-right: spacer(5);
+			&:last-of-type {padding-right: 0;}
+		}
+		span {
+			text-transform: uppercase;
+			font-style: italic;
+			font-size: 1em;
+			letter-spacing: 0.02em;
+			line-height: 2;
+			&:hover::before {
+				color: lightgray;
+		    font-size: 3.5em;
+		    font-style: italic;
+		    line-height: 0;
+		    position: absolute;
+		    top: 21px;
+		    text-transform: lowercase;
+			}
+		}
+		&:nth-child(1) span:hover::before {
+			content: "1";
+			left: -25px;
+		}
+		&:nth-child(2) span:hover::before {
+			content: "2";
+			left: -29px;
+		}
+		&:nth-child(3) span:hover::before {
+			content: "3";
+			left: -31px;
+		}
+		&:nth-child(4) span:hover::before {
+			content: "4";
+			left: -28px;
+		}
+	}
+}

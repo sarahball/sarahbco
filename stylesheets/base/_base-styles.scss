@@ -5,6 +5,7 @@ html {
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 //:root {font-size: calc(.35vw + 14.6px);}
@@ -26,12 +27,12 @@ body {
 // .container, // temp delete container
 main {
 	margin: 0 auto;
-	padding-top: spacer(5);
+	padding-top: spacer(7);
 	padding-bottom: spacer(5);
 	width: $container-width;
 	max-width: $container-width-max;
-	@media (#{$bp-desktop-begins}) {
-		padding-top: spacer(10);
+	@media (#{$bp-tablet-begins}) {
+		padding-top: spacer(9);
 		padding-bottom: spacer(10);
 	}
 }
