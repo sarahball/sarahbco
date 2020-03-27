@@ -6,9 +6,9 @@
 .btn,
 button {
   display: inline-block;
-  height: 42px;
+  height: 34px;
   padding: 0 30px;
-  line-height: 42px;
+  line-height: 34px;
   text-decoration: none;
   white-space: nowrap;
   background-color: $pop;
@@ -20,8 +20,8 @@ button {
 
 .btn:hover,
 button:hover {
-	background-color: lighten($pop, 15%);
-	-webkit-transition: background-color 0.1s ease;
+	background-color: lighten($pop, 10%);
+	-webkit-transition: background-color 0.15s ease;
 }
 
 .btn.disabled,

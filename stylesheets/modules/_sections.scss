@@ -221,7 +221,99 @@
 	& > * {margin: 0;}
 }
 
+// Experience
+
+#experience {
+	.table {
+		display: grid;
+		grid-template-columns: 100%;
+
+		@media (#{$bp-tablet-begins}) {
+			grid-template-columns: 50% 50%;
+		}
+
+		@media (#{$bp-desktop-begins}) {
+			grid-template-columns: repeat(3, auto);
+		}
+
+		.cell {
+			&:nth-child(3n-2) {
+				border-top: 1px solid $pop;
+				padding-top: spacer(1);
+			}
+			&:nth-child(3n) {padding-bottom: spacer(1);}
+			&:last-child {border-bottom: 1px solid $pop;}
+
+			@media (#{$bp-tablet-begins}) {
+				&:nth-child(3n) {grid-column: 1 / span 2;}
+				&:nth-child(3n-1) {
+					border-top: 1px solid $pop;
+					padding-top: spacer(1);
+					text-align: right;
+				}
+			}
+
+			@media (#{$bp-desktop-begins}) {
+				border-top: 1px solid $pop;
+				padding: spacer(1);
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+				&:nth-child(3n) {grid-column: auto;}
+				&:nth-child(3n-1) {text-align: left;}
+				&:nth-last-child(2),
+				&:nth-last-child(3) {border-bottom: 1px solid $pop;}
+			}
+		}
+	}
+}
+
+// Skills
+
+#skills {
+	grid-template-columns: repeat(1, 1fr);
+	header {}
+	.content {display: none;}
+	/*.item-title {
+		position: relative;
+		&::before {
+			color: rgba($pop, .2);
+	    font-size: 5em;
+	    font-style: italic;
+	    line-height: 0;
+	    position: absolute;
+	    bottom: 18px;
+	    right: -98%;
+	    text-align: left;
+	    width: 100%;
+		}
+		&.a::before {
+			content: "1";
+		}
+		&.b::before {
+			content: "2";
+		}
+		&.c::before {
+			content: "3";
+		}
+		&.d::before {
+			content: "4";
+		}
+	}*/
+}
+
 // Work
+
+#work {
+	.card {
+		&#{-image} {padding-bottom: 64%;}
+		&.a {.card-image {background-image: url(../assets/img/portfolio-riskopy-3.jpg);}}
+		&.b {.card-image {background-image: url(../assets/img/uponarrival-dsk.jpg);}}
+		&.c {.card-image {background-image: url(../assets/img/portfolio-advent-cover.png);}}
+	}
+}
+
+// Work // temp delete
 .layout-work-image {
 	@extend .g_;
 	@extend .g_4-d;

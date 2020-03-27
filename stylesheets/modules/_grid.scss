@@ -179,18 +179,35 @@
 
 .masonry-wrapper {
 	column-count: 1;
-	@media (#{$bp-phablet-begins}) {column-count: 2;}
-	@media (#{$bp-desktop-begins}) {column-count: 3;}
 	column-gap: spacer(2);
-	@media (#{$bp-phablet-begins}) {column-gap: spacer(3);}
+	@media (#{$bp-phablet-begins}) {
+		column-count: 2;
+		column-gap: spacer(3);
+	}
 	@media (#{$bp-tablet-begins}) {column-gap: spacer(5);}
+	@media (#{$bp-desktop-begins}) {column-count: 3;}
+
+	&#{-large} {
+		@media (#{$bp-tablet-begins}) {
+			column-count: 2;
+			column-gap: spacer(5);
+		}
+		@media (#{$bp-desktop-begins}) {column-gap: spacer(7);}
+
+		.masonry-container {
+			margin: spacer(5) 0;
+			@media (#{$bp-desktop-begins}) {margin: spacer(7) 0;}
+		}
+	}
 }
 
 .masonry-container {
 	break-inside: avoid;
-	margin: 40px 0;
+	margin: spacer(2) 0;
 	min-width: 100%;
 	max-width: 100%;
+	@media (#{$bp-phablet-begins}) {margin: spacer(3) 0;}
+	@media (#{$bp-tablet-begins}) {margin: spacer(5) 0;}
 
 	&:first-child {margin-top: 0;}
 	&:last-child {margin-bottom: 0;}

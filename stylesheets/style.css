@@ -226,10 +226,27 @@ a {
   text-decoration: none; }
 
 p a, figcaption a {
-  font-weight: 700;
-  transition: color .15s ease; }
+  transition: background .15s ease;
+  background: rgba(42, 49, 222, 0.1); }
   p a:hover, figcaption a:hover {
-    color: #2055CD; }
+    background: rgba(42, 49, 222, 0.2); }
+
+.card {
+  background-color: #FFF;
+  box-shadow: 0 20px 30px 0 rgba(0, 32, 59, 0.12);
+  padding: 32px 16px 2.5rem 16px; }
+  .card-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .card-header {
+    margin-bottom: 1.5rem; }
+  .card-content {
+    padding: 0 16px; }
+    .card-content h6, .card-content .btn, .card-content button {
+      padding-bottom: 0.5rem; }
+    .card-content h3 {
+      padding-bottom: 1rem; }
 
 .full {
   width: 100%;
@@ -283,7 +300,7 @@ a.img {
   a.img:hover {
     background: none; }
 
-h1, h2, h3, h4, .btn, button, h5, h6, p, figcaption {
+h1, h2, h3, h4, h5, h6, .btn, button, p, figcaption {
   margin: 0;
   padding: 0;
   font-weight: 400; }
@@ -303,10 +320,12 @@ body {
 p, figcaption {
   margin-bottom: 1.15rem; }
 
-h1, h2, h3, h4, .btn, button, h5 {
+h1, h2, h3, h4, h5 {
   font-family: "Cardo", serif;
   font-weight: 700;
   line-height: 1.4; }
+  h1 b, h2 b, h3 b, h4 b, h5 b {
+    color: #2A31DE; }
 
 h1 {
   margin-top: 0;
@@ -318,17 +337,16 @@ h2 {
 h3 {
   font-size: 1.424em; }
 
-h4, .btn, button {
+h4 {
   font-size: 1.266em; }
 
-h5 {
-  font-size: 1.125em; }
-
-h6 {
+h5, h6, .btn, button {
   font-size: 0.889em;
   font-weight: 400;
+  font-style: italic; }
+
+h5 {
   text-transform: uppercase;
-  font-style: italic;
   letter-spacing: 0.02em; }
 
 small {
@@ -337,10 +355,6 @@ small {
 span {
   display: inline-block;
   margin: 0; }
-
-b {
-  font-weight: 700;
-  color: #2055CD; }
 
 .strike {
   position: relative; }
@@ -388,6 +402,12 @@ figcaption {
 
 li {
   margin-bottom: 0; }
+
+header {
+  margin-bottom: 2rem; }
+  @media (min-width: 992px) {
+    header {
+      margin-bottom: 3rem; } }
 
 /* Modules */
 .grid {
@@ -679,22 +699,38 @@ li {
   column-gap: 1rem; }
   @media (min-width: 576px) {
     .masonry-wrapper {
-      column-count: 2; } }
-  @media (min-width: 992px) {
-    .masonry-wrapper {
-      column-count: 3; } }
-  @media (min-width: 576px) {
-    .masonry-wrapper {
+      column-count: 2;
       column-gap: 1.5rem; } }
   @media (min-width: 768px) {
     .masonry-wrapper {
       column-gap: 2.5rem; } }
+  @media (min-width: 992px) {
+    .masonry-wrapper {
+      column-count: 3; } }
+  @media (min-width: 768px) {
+    .masonry-wrapper-large {
+      column-count: 2;
+      column-gap: 2.5rem; } }
+  @media (min-width: 992px) {
+    .masonry-wrapper-large {
+      column-gap: 3.5rem; } }
+  .masonry-wrapper-large .masonry-container {
+    margin: 2.5rem 0; }
+    @media (min-width: 992px) {
+      .masonry-wrapper-large .masonry-container {
+        margin: 3.5rem 0; } }
 
 .masonry-container {
   break-inside: avoid;
-  margin: 40px 0;
+  margin: 1rem 0;
   min-width: 100%;
   max-width: 100%; }
+  @media (min-width: 576px) {
+    .masonry-container {
+      margin: 1.5rem 0; } }
+  @media (min-width: 768px) {
+    .masonry-container {
+      margin: 2.5rem 0; } }
   .masonry-container:first-child {
     margin-top: 0; }
   .masonry-container:last-child {
@@ -704,7 +740,7 @@ li {
   width: 300px;
   height: 96px; }
   .svg-title path {
-    fill: #2055CD; }
+    fill: #2A31DE; }
 
 .graphic-name {
   width: 333px;
@@ -745,12 +781,12 @@ li {
 
 .btn, button {
   display: inline-block;
-  height: 42px;
+  height: 34px;
   padding: 0 30px;
-  line-height: 42px;
+  line-height: 34px;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #2055CD;
+  background-color: #2A31DE;
   border: none;
   cursor: pointer;
   box-sizing: border-box;
@@ -758,8 +794,8 @@ li {
 
 .btn:hover,
 button:hover {
-  background-color: #5581e4;
-  -webkit-transition: background-color 0.1s ease; }
+  background-color: #565ce5;
+  -webkit-transition: background-color 0.15s ease; }
 
 .btn.disabled,
 button.disabled {
@@ -847,7 +883,7 @@ nav {
         nav a:last-of-type {
           padding-right: 0; } }
     nav a > *:hover::before {
-      color: lightgray;
+      color: rgba(42, 49, 222, 0.2);
       font-size: 3.5em;
       font-style: italic;
       line-height: 0;
@@ -1018,6 +1054,86 @@ nav {
       display: none; } }
   #hero-sub > * {
     margin: 0; }
+
+#experience .table {
+  display: grid;
+  grid-template-columns: 100%; }
+  @media (min-width: 768px) {
+    #experience .table {
+      grid-template-columns: 50% 50%; } }
+  @media (min-width: 992px) {
+    #experience .table {
+      grid-template-columns: repeat(3, auto); } }
+  #experience .table .cell:nth-child(3n-2) {
+    border-top: 1px solid #2A31DE;
+    padding-top: 0.5rem; }
+  #experience .table .cell:nth-child(3n) {
+    padding-bottom: 0.5rem; }
+  #experience .table .cell:last-child {
+    border-bottom: 1px solid #2A31DE; }
+  @media (min-width: 768px) {
+    #experience .table .cell:nth-child(3n) {
+      grid-column: 1 / span 2; }
+    #experience .table .cell:nth-child(3n-1) {
+      border-top: 1px solid #2A31DE;
+      padding-top: 0.5rem;
+      text-align: right; } }
+  @media (min-width: 992px) {
+    #experience .table .cell {
+      border-top: 1px solid #2A31DE;
+      padding: 0.5rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+      #experience .table .cell:nth-child(3n) {
+        grid-column: auto; }
+      #experience .table .cell:nth-child(3n-1) {
+        text-align: left; }
+      #experience .table .cell:nth-last-child(2), #experience .table .cell:nth-last-child(3) {
+        border-bottom: 1px solid #2A31DE; } }
+
+#skills {
+  grid-template-columns: repeat(1, 1fr);
+  /*.item-title {
+		position: relative;
+		&::before {
+			color: rgba($pop, .2);
+	    font-size: 5em;
+	    font-style: italic;
+	    line-height: 0;
+	    position: absolute;
+	    bottom: 18px;
+	    right: -98%;
+	    text-align: left;
+	    width: 100%;
+		}
+		&.a::before {
+			content: "1";
+		}
+		&.b::before {
+			content: "2";
+		}
+		&.c::before {
+			content: "3";
+		}
+		&.d::before {
+			content: "4";
+		}
+	}*/ }
+  #skills .content {
+    display: none; }
+
+#work .card-image {
+  padding-bottom: 64%; }
+
+#work .card.a .card-image {
+  background-image: url(../assets/img/portfolio-riskopy-3.jpg); }
+
+#work .card.b .card-image {
+  background-image: url(../assets/img/uponarrival-dsk.jpg); }
+
+#work .card.c .card-image {
+  background-image: url(../assets/img/portfolio-advent-cover.png); }
 
 .layout-work-content {
   margin-bottom: 2.5rem; }
