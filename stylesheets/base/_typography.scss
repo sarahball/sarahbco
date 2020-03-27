@@ -109,11 +109,11 @@ span {
 }
 
 figcaption {
-  @extend p;
+  /*@extend p;
   color: $grey;
   margin-top: spacer(2);
   //font-weight: 500;
-  //letter-spacing: -.25px;
+  //letter-spacing: -.25px;*/
   text-align: center;
 }
 

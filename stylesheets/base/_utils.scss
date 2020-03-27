@@ -19,7 +19,7 @@
 	@media (#{$bp-phablet-begins}) {flex-direction: row;}
 }
 
-.dsk {
+/*.dsk {
 	display: none;
 	@media (#{$bp-tablet-begins}) {display: block;}
 }
@@ -28,7 +28,7 @@
 	@media (#{$bp-tablet-begins}) {display: none;}
 }
 
-/*.disp {
+.disp {
 	&-mb {
 		@media (#{$bp-phablet-begins}) {display: none!important;}
 	}

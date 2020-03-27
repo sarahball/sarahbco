@@ -186,6 +186,7 @@ body {
   min-height: 100vh;
   background: #F1F4F5; }
 
+.container,
 main {
   margin: 0 auto;
   padding-top: 3.5rem;
@@ -193,17 +194,18 @@ main {
   width: 80%;
   max-width: 960px; }
   @media (min-width: 768px) {
+    .container,
     main {
       padding-top: 4.5rem;
       padding-bottom: 5rem; } }
 
-.fullpage {
+.fullpage, .portfolio .fig-fullpage, .portfolio .fig-nearly-full {
   width: 100vw;
   position: relative;
   left: 50%;
   margin-left: -50vw; }
   @media (min-width: 1400px) {
-    .fullpage {
+    .fullpage, .portfolio .fig-fullpage, .portfolio .fig-nearly-full {
       width: 1400px;
       left: calc(50% + calc(calc(100vw - 1400px) / 2)); } }
 
@@ -225,10 +227,10 @@ a {
   color: #252120;
   text-decoration: none; }
 
-p a, figcaption a {
+p a {
   transition: background .15s ease;
   background: rgba(42, 49, 222, 0.1); }
-  p a:hover, figcaption a:hover {
+  p a:hover {
     background: rgba(42, 49, 222, 0.2); }
 
 .card {
@@ -280,17 +282,16 @@ p a, figcaption a {
     .flex-row {
       flex-direction: row; } }
 
-.dsk {
-  display: none; }
-  @media (min-width: 768px) {
-    .dsk {
-      display: block; } }
+/*.dsk {
+	display: none;
+	@media (min-width: 768px) {display: block;}
+}
 
-@media (min-width: 768px) {
-  .mb {
-    display: none; } }
+.mb {
+	@media (min-width: 768px) {display: none;}
+}
 
-/*.disp {
+.disp {
 	&-mb {
 		@media (min-width: 576px) {display: none!important;}
 	}
@@ -300,7 +301,7 @@ a.img {
   a.img:hover {
     background: none; }
 
-h1, h2, h3, h4, h5, h6, .btn, button, p, figcaption {
+h1, h2, h3, h4, h5, h6, .btn, button, p {
   margin: 0;
   padding: 0;
   font-weight: 400; }
@@ -317,7 +318,7 @@ body {
   font-weight: 400;
   line-height: 1.65; }
 
-p, figcaption {
+p {
   margin-bottom: 1.15rem; }
 
 h1, h2, h3, h4, h5 {
@@ -396,8 +397,11 @@ span {
   text-align: center; }
 
 figcaption {
-  color: #F1F4F5;
-  margin-top: 1rem;
+  /*@extend p;
+  color: $grey;
+  margin-top: spacer(2);
+  //font-weight: 500;
+  //letter-spacing: -.25px;*/
   text-align: center; }
 
 li {
@@ -409,6 +413,93 @@ header {
     header {
       margin-bottom: 3rem; } }
 
+/* Layouts */
+.home section {
+  margin-bottom: 5rem; }
+  .home section:last-of-type {
+    margin-bottom: 0; }
+
+.portfolio {
+  background: #FFF; }
+  .portfolio article > * {
+    margin-bottom: 2.5rem; }
+  .portfolio h1 {
+    margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .portfolio p {
+      width: 82%; } }
+  @media (min-width: 576px) {
+    .portfolio .fig-nearly-full {
+      width: 100%;
+      left: auto;
+      margin-left: 0; } }
+  @media (min-width: 768px) {
+    .portfolio .fig-nearly-full {
+      width: 82%;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (min-width: 576px) {
+    .portfolio .fig-half {
+      width: 82%;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (min-width: 992px) {
+    .portfolio .fig-half {
+      width: 50%; } }
+
+/*
+.portfolio {
+	background: white;
+
+	h1, h2 {@extend .layout-full;}
+	.portfolio-subtitle {@extend .layout-full;}
+
+	figure {margin-bottom: spacer(5);}
+
+	.portfolio-block {
+		margin-bottom: spacer(10);
+
+		p, ul {
+			@extend .g_;
+			@extend .off_1-d;
+			@extend .g_9-d;
+			@extend .g_12-t;
+			@extend .g_12-p;
+		}
+
+		@media (min-width: 576px) {
+			p, ul {margin-bottom: 0;}
+			figure {margin-bottom: spacer(2);}
+		}
+	}
+
+	.portfolio-block-sidebar {
+		margin-bottom: spacer(10);
+
+		h2, p, ul {
+			@extend .g_;
+			@extend .g_8-d;
+			@extend .g_12-t;
+			@extend .g_12-p;
+		}
+		.sidebar {
+			@extend .g_;
+			@extend .off_8-d;
+			@extend .g_4-d;
+			@extend .off_1-t;
+			@extend .g_10-t;
+		}
+	}
+
+	.portfolio-block-override {
+		margin-bottom: spacer(10);
+	}
+
+	.portfolio-block-wireframes {
+		flex-wrap: wrap;
+		& > * {flex-basis: 33%;}
+	}
+}*/
 /* Modules */
 .grid {
   display: grid;
@@ -424,7 +515,7 @@ header {
     .grid {
       grid-gap: 4rem; } }
 
-.layout-full, .portfolio h1, .portfolio h2, .portfolio .portfolio-subtitle {
+.layout-full {
   grid-column: span 12; }
 
 .layout-nearly-full {
@@ -457,7 +548,7 @@ header {
   .layout-quarter {
     grid-column: span 3; } }
 
-.g_, .portfolio .portfolio-block p, .portfolio .portfolio-block figcaption, .portfolio .portfolio-block ul, .portfolio .portfolio-block-sidebar h2, .portfolio .portfolio-block-sidebar p, .portfolio .portfolio-block-sidebar figcaption, .portfolio .portfolio-block-sidebar ul, .portfolio .portfolio-block-sidebar .sidebar, .layout-work-image, .layout-work-content {
+.g_, .layout-work-image, .layout-work-content {
   grid-column: auto / span 12; }
 
 [class*="g_"] {
@@ -549,7 +640,7 @@ header {
     grid-column: auto / span 10; }
   .g_11-p {
     grid-column: auto / span 11; }
-  .g_12-p, .portfolio .portfolio-block p, .portfolio .portfolio-block figcaption, .portfolio .portfolio-block ul, .portfolio .portfolio-block-sidebar h2, .portfolio .portfolio-block-sidebar p, .portfolio .portfolio-block-sidebar figcaption, .portfolio .portfolio-block-sidebar ul, .layout-work-content {
+  .g_12-p, .layout-work-content {
     grid-column: auto / span 12; }
   .off_1-p {
     grid-column-start: 2; }
@@ -605,13 +696,13 @@ header {
     grid-column: auto / span 8; }
   .g_9-t {
     grid-column: auto / span 9; }
-  .g_10-t, .portfolio .portfolio-block-sidebar .sidebar {
+  .g_10-t {
     grid-column: auto / span 10; }
   .g_11-t {
     grid-column: auto / span 11; }
-  .g_12-t, .portfolio .portfolio-block p, .portfolio .portfolio-block figcaption, .portfolio .portfolio-block ul, .portfolio .portfolio-block-sidebar h2, .portfolio .portfolio-block-sidebar p, .portfolio .portfolio-block-sidebar figcaption, .portfolio .portfolio-block-sidebar ul {
+  .g_12-t {
     grid-column: auto / span 12; }
-  .off_1-t, .portfolio .portfolio-block-sidebar .sidebar {
+  .off_1-t {
     grid-column-start: 2; }
   .off_2-t {
     grid-column-start: 3; }
@@ -653,7 +744,7 @@ header {
     grid-column: auto / span 2; }
   .g_3-d {
     grid-column: auto / span 3; }
-  .g_4-d, .portfolio .portfolio-block-sidebar .sidebar, .layout-work-image, .layout-work-content {
+  .g_4-d, .layout-work-image, .layout-work-content {
     grid-column: auto / span 4; }
   .g_5-d {
     grid-column: auto / span 5; }
@@ -661,9 +752,9 @@ header {
     grid-column: auto / span 6; }
   .g_7-d {
     grid-column: auto / span 7; }
-  .g_8-d, .portfolio .portfolio-block-sidebar h2, .portfolio .portfolio-block-sidebar p, .portfolio .portfolio-block-sidebar figcaption, .portfolio .portfolio-block-sidebar ul {
+  .g_8-d {
     grid-column: auto / span 8; }
-  .g_9-d, .portfolio .portfolio-block p, .portfolio .portfolio-block figcaption, .portfolio .portfolio-block ul {
+  .g_9-d {
     grid-column: auto / span 9; }
   .g_10-d {
     grid-column: auto / span 10; }
@@ -671,7 +762,7 @@ header {
     grid-column: auto / span 11; }
   .g_12-d {
     grid-column: auto / span 12; }
-  .off_1-d, .portfolio .portfolio-block p, .portfolio .portfolio-block figcaption, .portfolio .portfolio-block ul, .layout-work-image {
+  .off_1-d, .layout-work-image {
     grid-column-start: 2; }
   .off_2-d {
     grid-column-start: 3; }
@@ -685,7 +776,7 @@ header {
     grid-column-start: 7; }
   .off_7-d {
     grid-column-start: 8; }
-  .off_8-d, .portfolio .portfolio-block-sidebar .sidebar {
+  .off_8-d {
     grid-column-start: 9; }
   .off_9-d {
     grid-column-start: 10; }
@@ -900,31 +991,6 @@ nav {
     nav a:nth-child(4) > *:hover::before {
       content: "4";
       left: -.525em; }
-
-.home section {
-  margin-bottom: 5rem; }
-  .home section:last-of-type {
-    margin-bottom: 0; }
-
-.portfolio {
-  background: white; }
-  .portfolio figure {
-    margin-bottom: 2.5rem; }
-  .portfolio .portfolio-block {
-    margin-bottom: 5rem; }
-    @media (min-width: 576px) {
-      .portfolio .portfolio-block p, .portfolio .portfolio-block figcaption, .portfolio .portfolio-block ul {
-        margin-bottom: 0; }
-      .portfolio .portfolio-block figure {
-        margin-bottom: 1rem; } }
-  .portfolio .portfolio-block-sidebar {
-    margin-bottom: 5rem; }
-  .portfolio .portfolio-block-override {
-    margin-bottom: 5rem; }
-  .portfolio .portfolio-block-wireframes {
-    flex-wrap: wrap; }
-    .portfolio .portfolio-block-wireframes > * {
-      flex-basis: 33%; }
 
 #intro {
   margin-bottom: 0; }

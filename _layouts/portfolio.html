@@ -10,11 +10,15 @@
 	<body class="portfolio">
 		<div class="container">
 			<div class="grid">
-				<a class="right layout-full" href="{{ site.baseurl }}{% link index.html %}"><h4>Home</h4></a>
+				<div class="layout-full right">
+					<h5><a href="{{ site.baseurl }}{% link index.html %}">Home</a></h5>
+				</div>
 			</div>
 			{{ content }}
 			<div class="grid">
-				<a class="layout-full" href="{{ site.baseurl }}{% link index.html %}"><h4>Home</h4></a>
+				<div class="layout-full">
+					<h5><a href="{{ site.baseurl }}{% link index.html %}">Home</a></h5>
+				</div>
 			</div>
 		</div>
 

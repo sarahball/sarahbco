@@ -7,6 +7,10 @@
 @import "base/utils";
 @import "base/typography";
 
+/* Layouts */
+@import "layouts/home";
+@import "layouts/portfolio";
+
 /* Modules */
 @import "modules/grid";
 @import "modules/graphics";

@@ -1,68 +1,6 @@
 // Sections
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Home Page Layout
-
-.home section {
-	margin-bottom: spacer(10);
-	&:last-of-type {margin-bottom: 0;}
-}
-
-// Portfolio Page Layout 
-
-.portfolio {
-	background: white;
-
-	h1, h2 {@extend .layout-full;}
-	.portfolio-subtitle {@extend .layout-full;}
-
-	figure {margin-bottom: spacer(5);}
-
-	.portfolio-block {
-		margin-bottom: spacer(10);
-
-		p, ul {
-			@extend .g_;
-			@extend .off_1-d;
-			@extend .g_9-d;
-			@extend .g_12-t;
-			@extend .g_12-p;
-		}
-
-		@media (#{$bp-phablet-begins}) {
-			p, ul {margin-bottom: 0;}
-			figure {margin-bottom: spacer(2);}
-		}
-	}
-
-	.portfolio-block-sidebar {
-		margin-bottom: spacer(10);
-
-		h2, p, ul {
-			@extend .g_;
-			@extend .g_8-d;
-			@extend .g_12-t;
-			@extend .g_12-p;
-		}
-		.sidebar {
-			@extend .g_;
-			@extend .off_8-d;
-			@extend .g_4-d;
-			@extend .off_1-t;
-			@extend .g_10-t;
-		}
-	}
-
-	.portfolio-block-override {
-		margin-bottom: spacer(10);
-	}
-
-	.portfolio-block-wireframes {
-		flex-wrap: wrap;
-		& > * {flex-basis: 33%;}
-	}
-}
-
 // Intro
 
 #intro {

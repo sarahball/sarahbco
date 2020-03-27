@@ -1,0 +1,9 @@
+// Home
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Home Page Layout
+
+.home section {
+	margin-bottom: spacer(10);
+	&:last-of-type {margin-bottom: 0;}
+}
