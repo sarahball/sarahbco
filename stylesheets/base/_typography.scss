@@ -57,7 +57,7 @@ h5 {
   letter-spacing: 0.02em;
 }
 
-small {font-size: 0.79em;}
+small, .small {font-size: 0.79em;}
 
 span {
   display: inline-block;
@@ -109,6 +109,7 @@ span {
 }
 
 figcaption {
+  color: $pop; // temp
   /*@extend p;
   color: $grey;
   margin-top: spacer(2);

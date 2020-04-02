@@ -12,9 +12,9 @@
 
 	h1 {margin-bottom: 0;}
 
-	p {
-		@media (#{$bp-tablet-begins}) {width: 82%;}
-	}
+	p {@media (#{$bp-tablet-begins}) {width: 82%;}}
+
+	ul {@media (#{$bp-tablet-begins}) {width: calc(82% - 20px);}}
 
 	// Figures
 	.fig-fullpage {@extend .fullpage;}
@@ -38,6 +38,82 @@
 			margin-right: auto;
 		}
 		@media (#{$bp-desktop-begins}) {width: 50%;}
+	}
+	.fig-table {
+		font-size: 0.79em;
+		@media (#{$bp-tablet-begins}) {font-size: inherit;}
+	}
+
+	// Portfolio Grid
+	.portfolio-grid {
+		display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: spacer(5);
+    column-gap: spacer(3);
+    & > *:last-child {margin-bottom: 0;}
+		@media (#{$bp-desktop-begins}) {column-gap: spacer(5);}
+	}
+
+	// Sidebars
+	.sidebar-container {
+		display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: spacer(5);
+		@media (#{$bp-tablet-begins}) {
+			p {width: 100%;}
+			ul {width: calc(100% - 20px);}
+		}
+		@media (#{$bp-desktop-begins}) {column-gap: spacer(5);}
+	}
+
+	.sidebar {
+		font-size: 0.79em;
+		color: $pop; // temp
+		grid-column: span 12;
+		& > *:last-child {margin-bottom: 0;}
+		@media (#{$bp-tablet-begins}) {grid-column: 2 / span 9;}
+		@media (#{$bp-desktop-begins}) {
+			grid-column: 9 / span 4;
+			grid-row: 1 / 1;
+		}
+	}
+
+	.sidebar-body {
+		& > * {
+			margin-bottom: spacer(5);
+			&:last-child {margin-bottom: 0;}
+		}
+		grid-column: span 12;
+		@media (#{$bp-tablet-begins}) {grid-column: 1 / span 10;}
+		@media (#{$bp-desktop-begins}) {
+			grid-column: 1 / span 8;
+			grid-row: 1 / 1;
+		}
+	}
+
+	// Dark Sections
+	.section-dark-wrapper {
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		margin-left: -50vw;
+		background: darken(rgba($pop, .9), 45%);
+		padding-bottom: spacer(5);
+		& > * {margin-bottom: spacer(5);}
+	}
+	.section-dark-container {
+		width: 80%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    & > * {margin-bottom: spacer(5);}
+	}
+}
+
+.shots {
+	figure img {
+		box-shadow: 0 5px 15px 0 rgba(0, 32, 59, 0.12);
+		margin-bottom: 2.5rem;
 	}
 }
 

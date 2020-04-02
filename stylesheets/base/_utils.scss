@@ -38,3 +38,19 @@ a.img {
 	border-bottom: none;
 	&:hover {background: none;}
 }
+
+.fig-border {
+	img {
+		border: spacer(1) solid rgba($grey, 0.2);
+		&.zoom-img {border: 0;}
+	}
+	&.fig-nearly-full {
+		img {
+			border: 0;
+			@media (#{$bp-phablet-begins}) {
+				border: spacer(1) solid rgba($grey, 0.2);
+				&.zoom-img {border: 0;}
+			}
+		}
+	}
+}
