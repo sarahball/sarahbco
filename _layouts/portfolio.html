@@ -2,12 +2,8 @@
 <html lang="en">
 	<head>
 	  {% include head.html %}
-	  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | absolute_url }}">
-	  {% if site.google_analytics and jekyll.environment == 'production' %}
-	  {% include analytics.html %}
-	  {% endif %}
 	</head>
-	<body class="portfolio">
+	<body class="portfolio"{% if page.id %} id="page_{{ page.id }}"{% endif %}>
 		<div class="container">
 			<div class="grid">
 				<div class="layout-full right">

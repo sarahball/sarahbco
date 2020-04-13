@@ -11,17 +11,18 @@ button {
   line-height: 34px;
   text-decoration: none;
   white-space: nowrap;
-  background-color: $pop;
   border: none;
   cursor: pointer;
   box-sizing: border-box;
-  -webkit-transition: background-color 0.1s ease;
-}
-
-.btn:hover,
-button:hover {
-	background-color: lighten($pop, 10%);
-	-webkit-transition: background-color 0.15s ease;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: linear-gradient(to right, lighten($pop, 15%) 33%, magenta 43%, magenta 56%, $pop 66%);
+  background-size: 306% 100%;
+  background-position: 100%;
+  transition: .15s background-position;
+  &:hover {
+    background-position: 0%;
+  }
 }
 
 .btn.disabled,

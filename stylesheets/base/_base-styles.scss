@@ -60,14 +60,26 @@ img {
 // Links
 
 a {
-	color: $font-color;
+	color: inherit;
 	text-decoration: none;
 }
 
 p a {
-	transition: background .15s ease;
-	background: rgba($pop, .1);
-	&:hover {background: rgba($pop, .2);}
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative;
+  background-image: linear-gradient(to right, lighten($pop, 25%) 33%, magenta 43%, magenta 56%, $pop 66%);
+  background-size: 306% 30%;
+  background-position: 100% 1.3em;
+  transition: .25s background-position;
+  &:hover {
+    background-position: 0% 1.3em;
+  }
+}
+
+p sup a {
+	background: none;
+	&:hover {background: none;}
 }
 
 // Cards

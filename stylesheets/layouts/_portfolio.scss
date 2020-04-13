@@ -68,7 +68,6 @@
 
 	.sidebar {
 		font-size: 0.79em;
-		color: $pop; // temp
 		grid-column: span 12;
 		& > *:last-child {margin-bottom: 0;}
 		@media (#{$bp-tablet-begins}) {grid-column: 2 / span 9;}
@@ -97,7 +96,7 @@
 		position: relative;
 		left: 50%;
 		margin-left: -50vw;
-		background: darken(rgba($pop, .9), 45%);
+		background: darken(rgba($pop, .8), 50%);
 		padding-bottom: spacer(5);
 		& > * {margin-bottom: spacer(5);}
 	}
@@ -108,12 +107,14 @@
     margin-right: auto;
     & > * {margin-bottom: spacer(5);}
 	}
-}
 
-.shots {
-	figure img {
-		box-shadow: 0 5px 15px 0 rgba(0, 32, 59, 0.12);
-		margin-bottom: 2.5rem;
+	// Page - Shots
+	&#page_shots {
+		.fig-nearly-full {
+			left: 0;
+			margin-left: auto;
+			width: 100%;
+		}
 	}
 }
 
