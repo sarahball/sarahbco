@@ -232,11 +232,11 @@ p a {
   text-decoration: none;
   position: relative;
   background-image: linear-gradient(to right, #989cef 33%, magenta 43%, magenta 56%, #2A31DE 66%);
-  background-size: 306% 30%;
-  background-position: 100% 1.3em;
+  background-size: 306% 2px;
+  background-position: 100% bottom;
   transition: .25s background-position; }
   p a:hover {
-    background-position: 0% 1.3em; }
+    background-position: 0% bottom; }
 
 p sup a {
   background: none; }

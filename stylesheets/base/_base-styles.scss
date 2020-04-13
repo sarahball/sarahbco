@@ -69,11 +69,11 @@ p a {
   text-decoration: none;
   position: relative;
   background-image: linear-gradient(to right, lighten($pop, 25%) 33%, magenta 43%, magenta 56%, $pop 66%);
-  background-size: 306% 30%;
-  background-position: 100% 1.3em;
+  background-size: 306% 2px;
+  background-position: 100% bottom;
   transition: .25s background-position;
   &:hover {
-    background-position: 0% 1.3em;
+    background-position: 0% bottom;
   }
 }
 
