@@ -4,7 +4,6 @@ _site
 config.codekit3
 Gemfile.lock
 .DS_Store
-/_includes/work.html
 /assets/img/bg-dsk-xl.jpg
 /assets/img/bg-dsk.jpg
 /assets/img/bg-mb.jpg
