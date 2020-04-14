@@ -4,7 +4,7 @@
 
 This is the repository for [sarahb.co](https://sarahb.co). It's my landing page, portfolio, and all-around homebase on the internet.
 
-I'm Sarah Ball, a product designer. You can reach me by [email](mailto:hi@sarahb.co) or [@_satelliteeyes](http://www.twitter.com/_satelliteeyes).
+I'm Sarah Ball, a product designer. You can reach me by [email](mailto:hi@sarahb.co) or [@sarahdotgif](http://www.twitter.com/sarahdotgif).
 
 ### Contributing
 
@@ -33,9 +33,6 @@ You're welcome to inspect and duplicate any code you like from this site. Images
 
 #### Type
 - Google Fonts
-
-#### Photography
-- Jeff Wang
 
 Designed, developed, and deployed by Sarah Ball
 
