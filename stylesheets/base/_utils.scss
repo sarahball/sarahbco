@@ -19,21 +19,6 @@
 	@media (#{$bp-phablet-begins}) {flex-direction: row;}
 }
 
-/*.dsk {
-	display: none;
-	@media (#{$bp-tablet-begins}) {display: block;}
-}
-
-.mb {
-	@media (#{$bp-tablet-begins}) {display: none;}
-}
-
-.disp {
-	&-mb {
-		@media (#{$bp-phablet-begins}) {display: none!important;}
-	}
-}*/
-
 a.img {
 	border-bottom: none;
 	&:hover {background: none;}

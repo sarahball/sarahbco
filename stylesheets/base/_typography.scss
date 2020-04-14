@@ -44,8 +44,6 @@ h3 {font-size: 1.424em;}
 
 h4 {font-size: 1.266em;}
 
-//h5 {font-size: 1.125em;}
-
 h5, h6 {
   font-size: 0.889em;
   font-weight: 400;
@@ -80,27 +78,6 @@ span {
   }
 }
 
-/*.underline {
-  position: relative;
-  &:before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 85%;
-    width: 100%;
-    background-image: url(../assets/svg/underline1.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 6px;
-  }
-  &:nth-child(1):before {background-image: url(../assets/svg/underline1.svg);}
-  &:nth-child(2):before {background-image: url(../assets/svg/underline2.svg);}
-  &:nth-child(3):before {background-image: url(../assets/svg/underline3.svg);}
-  &:nth-child(4):before {background-image: url(../assets/svg/underline4.svg);}
-  &:nth-child(5):before {background-image: url(../assets/svg/underline5.svg);}
-}*/
-
 .btn, button {
   @extend h6;
   margin-bottom: 0;
@@ -110,11 +87,6 @@ span {
 
 figcaption {
   color: $pop; // temp
-  /*@extend p;
-  color: $grey;
-  margin-top: spacer(2);
-  //font-weight: 500;
-  //letter-spacing: -.25px;*/
   text-align: center;
 }
 

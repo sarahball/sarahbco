@@ -27,14 +27,10 @@ main {
 	width: 100vw;
   position: relative;
   left: 50%;
-  //right: 50%;
   margin-left: -50vw;
-  //margin-right: -50vw;
   @media (#{$bp-desktop-xl-begins}) {
 		width: $bp-desktop-xl;
 		left: calc(50% + calc(calc(100vw - #{$bp-desktop-xl}) / 2));
-    //position: relative;
-    //margin-left: -50vw;
   }
 }
 

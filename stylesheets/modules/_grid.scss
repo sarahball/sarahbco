@@ -93,19 +93,6 @@
 
 // Tablet begins at 577px
 @media (#{$bp-tablet-begins}) {
-	/*.g_1 {grid-column:  auto / span 3;}
-	.g_2 {grid-column:  auto / span 3;}
-	.g_3 {grid-column:  auto / span 3;}
-	.g_4 {grid-column:  auto / span 6;}
-	.g_5 {grid-column:  auto / span 6;}
-	.g_6 {grid-column:  auto / span 6;}
-	.g_7 {grid-column:  auto / span 12;}
-	.g_8 {grid-column:  auto / span 12;}
-	.g_9 {grid-column:  auto / span 12;}
-	.g_10 {grid-column:  auto / span 12;}
-	.g_11 {grid-column:  auto / span 12;}
-	.g_12 {grid-column:  auto / span 12;}*/
-
 	.g_1-t {grid-column:  auto / span 1;}
 	.g_2-t {grid-column:  auto / span 2;}
 	.g_3-t {grid-column:  auto / span 3;}
@@ -135,19 +122,6 @@
 
 // Desktop begins at 769px
 @media (#{$bp-desktop-begins}) {
-	/*.g_1 {grid-column:  auto / span 1;}
-	.g_2 {grid-column:  auto / span 2;}
-	.g_3 {grid-column:  auto / span 3;}
-	.g_4 {grid-column:  auto / span 4;}
-	.g_5 {grid-column:  auto / span 5;}
-	.g_6 {grid-column:  auto / span 6;}
-	.g_7 {grid-column:  auto / span 7;}
-	.g_8 {grid-column:  auto / span 8;}
-	.g_9 {grid-column:  auto / span 9;}
-	.g_10 {grid-column:  auto / span 10;}
-	.g_11 {grid-column:  auto / span 11;}
-	.g_12 {grid-column:  auto / span 12;}*/
-
 	.g_1-d {grid-column:  auto / span 1;}
 	.g_2-d {grid-column:  auto / span 2;}
 	.g_3-d {grid-column:  auto / span 3;}

@@ -122,7 +122,6 @@
 			@media (#{$bp-phablet-begins}) {display: block;}
 		}
 		.d {
-			//margin: 0;
 			display: none;
 			grid-column: 1 / span 3;
 			grid-row: 2;
@@ -212,32 +211,6 @@
 	grid-template-columns: repeat(1, 1fr);
 	header {}
 	.content {display: none;}
-	/*.item-title {
-		position: relative;
-		&::before {
-			color: rgba($pop, .2);
-	    font-size: 5em;
-	    font-style: italic;
-	    line-height: 0;
-	    position: absolute;
-	    bottom: 18px;
-	    right: -98%;
-	    text-align: left;
-	    width: 100%;
-		}
-		&.a::before {
-			content: "1";
-		}
-		&.b::before {
-			content: "2";
-		}
-		&.c::before {
-			content: "3";
-		}
-		&.d::before {
-			content: "4";
-		}
-	}*/
 }
 
 // Work
@@ -249,26 +222,6 @@
 		&.b {.card-image {background-image: url(../assets/img/uponarrival-dsk.jpg);}}
 		&.c {.card-image {background-image: url(../assets/img/portfolio-advent-cover.png);}}
 	}
-}
-
-// Work // temp delete
-.layout-work-image {
-	@extend .g_;
-	@extend .g_4-d;
-	@extend .off_1-d;
-	@extend .g_5-t;
-	@extend .g_9-p;
-}
-.layout-work-content {
-	@extend .g_;
-	@extend .g_4-d;
-	@extend .g_7-t;
-	@extend .g_12-p;
-	margin-bottom: spacer(5);
-}
-
-@media (#{$bp-tablet-begins}) {
-	.layout-work-image {margin-bottom: spacer(5);}
 }
 
 // Sarah
