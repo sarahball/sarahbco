@@ -42,6 +42,7 @@
 			100% 100%, 						 //outside-right-bottom
 			100% 0 							 //outside-right-top
 		);
+		opacity: 0;
 		@media (#{$bp-phablet-begins}) {
 			grid-column: 1 / span 8;
 			clip-path: polygon(
@@ -56,6 +57,7 @@
 				100% 100%, 						 //outside-right-bottom
 				100% 0 							 //outside-right-top
 			);
+			opacity: 100%;
 		}
 		@media (#{$bp-desktop-begins}) {
 			clip-path: polygon(
