@@ -821,7 +821,8 @@ header {
 .masonry-container {
   break-inside: avoid;
   min-width: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  padding-bottom: 50px; }
 
 .svg-title {
   width: 300px;
